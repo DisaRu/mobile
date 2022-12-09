@@ -1,0 +1,28 @@
+.header {
+    height: 50px;
+    background-color: aqua;
+
+
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+    }
+}
+
+.main{
+    margin-top: 50px;
+    &_list{
+        
+        &-item{
+            margin: 10px 0px;
+            font-size: 20px;
+            
+        }
+    }
+}
