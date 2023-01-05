@@ -1,0 +1,41 @@
+@import 'settings/vars';
+@import 'settings/fonts';
+@import 'settings/reset';
+@import 'settings/libs';
+@import 'settings/global';
+
+
+// blocks
+
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/burger';
+
+// components
+
+
+
+
+
+.button {}
+
+.brd {
+    border: 1px solid;
+}
+
+.tac {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+

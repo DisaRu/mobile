@@ -1,0 +1,42 @@
+html,
+body {
+	max-width: 100%;
+	font-size: 1rem;
+	// overflow-x: hidden;
+	font-family: var(--font-family);
+	background-color: var(--bg-color);
+}
+
+.page_wrapper {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.container {
+
+	max-width: 1405px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+.header {
+	width: 100%;
+
+	flex: 0 1 auto;
+
+}
+
+.main {
+
+	flex: 0 1 auto;
+	// height: 100vh;
+
+}
+
+.footer {
+	flex: 0 0 auto;
+}
