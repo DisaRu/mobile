@@ -2,3 +2,8 @@ catering/app/gulpfile.js
 catering/app/node_modules
 catering/app/package-lock.json
 catering/app/package.json
+
+gulpfile.js
+node_modules
+package-lock.
+package.json
