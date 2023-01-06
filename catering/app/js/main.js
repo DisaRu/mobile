@@ -12,12 +12,12 @@ OpenBtn.onclick = function () {
 
 }
 linkas.onclick = function () {
-    burgerMenu.classList.toggle("burger__menu-active")
+    burgerMenu.classList.toggle("burger__menu-active");
 
 
 }
 overlay.onclick = function () {
-    burgerMenu.classList.toggle("burger__menu-active")
+    burgerMenu.classList.toggle("burger__menu-active");
 
 
 }
@@ -51,46 +51,64 @@ overlay.onclick = function () {
 
 
 
-const cardCount = document.querySelector('.card__count')
+// const cardCount = document.querySelector('.card__count')
 
 window.addEventListener('click', function (event) {
     let cardCount;
 
-   
-
-
+    let cardWeight;
+    let parentWeight;
+    
     if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
         const parent = event.target.closest('.card__control')
-        cardCount = parent.querySelector('[data-counter]')
+        cardCount = parent.querySelector('[data-counter]');
+     
+
     }
+    if (event.target.dataset.action === 'plus' || event.target.dataset.action === 'minus') {
+        const parent = event.target.closest('.card__control')
+        cardCount = parent.querySelector('[data-counter]');
+     
+        cardWeight = parent.querySelector('[data-weight]') ;
 
+        let cardCountSum = parseInt(parent.querySelector('[data-counter]'));
+        let cardWeightSum = parseInt(cardWeight);
+        
+        console.log(cardCountSum * cardWeightSum);
 
-
+    }
     if (event.target.dataset.action === 'plus') {
-        cardCount.innerText = ++cardCount.innerText
-    }
 
-    if (event.target.dataset.action === 'minus') {
+        cardCount.innerText = ++cardCount.innerText;
 
-        if (+cardCount.innerText > 1) {
-            cardCount.innerText = --cardCount.innerText;
-        }else if(event.target.closest('.cart__wrapper') && +cardCount.innerText === 1 ){
 
-            event.target.closest('.cart').remove();
-            
-            cartToggleStatus();  
-
-            calc();
-            
-        }
-        
-        
-        
+  
     }
     
-    if(event.target.hasAttribute('data-action') && event.target.closest('.cart__wrapper')){
-        calc();
+    if (event.target.dataset.action === 'minus') {
+        
+        if (+cardCount.innerText > 1) {
+            cardCount.innerText = --cardCount.innerText;
+            
+      
+            
+        } else if (event.target.closest('.cart__wrapper') && +cardCount.innerText === 1) {
+
+            event.target.closest('.cart').remove();
+
+            cartToggleStatus();
+
+            calc();
+
+        }
+
+
+
     }
 
+    if (event.target.hasAttribute('data-action') && event.target.closest('.cart__wrapper')) {
+        calc();
+    }
+    
 
 });

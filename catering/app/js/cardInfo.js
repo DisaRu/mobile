@@ -5,7 +5,7 @@ window.addEventListener('click', function (event) {
         const dataContent = infoBtn.querySelector('[data-info-content]');
         const infoContent = dataContent;
         infoContent.classList.toggle('card__info-show');
-        console.log(dataContent);
+        // console.log(dataContent);
 
     }
     
@@ -14,7 +14,7 @@ window.addEventListener('click', function (event) {
         dataContent.forEach(el => {
             el.hasChildNodes('.info__content')
             el.classList.remove('card__info-show');
-            console.log(el);
+            // console.log(el);
         });
       
     }

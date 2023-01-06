@@ -37,6 +37,7 @@ window.addEventListener('click', function (event) {
                     <h4 class="cart__item--title">${cardInfo.cardTitle}</h4>
                     
                     <div class="cart__item--price" data-cartPrice>${cardInfo.cardPrice} </div>
+                    <div class="cart__item--weight" data-cardWeigth>${cardInfo.cardWeigth} </div>
 
                     <div class="card__control">
                     <button class="card__button card__button-minus" data-action="minus">-</button>
