@@ -32,8 +32,7 @@ window.addEventListener('click', function (event) {
         
             <div class="cart">
                 <div class="cart__item" data-id="${cardInfo.cardId}">
-                    <img src="${cardInfo.cardImg}"
-                        alt="${cardInfo.cardTitle}" class="cart__list-item--img">
+                    
                     <h4 class="cart__item--title">${cardInfo.cardTitle}</h4>
                     
                     <div class="cart__item--price" data-cartPrice>${cardInfo.cardPrice} </div>
