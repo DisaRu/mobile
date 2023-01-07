@@ -1,4 +1,6 @@
 cartWrapper = document.querySelector('.cart__wrapper')
+
+
 window.addEventListener('click', function (event) {
 
     if (event.target.hasAttribute('data-toCart')) {
@@ -10,7 +12,7 @@ window.addEventListener('click', function (event) {
             cardId: card.dataset.id,
             cardImg: card.querySelector('.card__img').getAttribute('src'),
             cardTitle: card.querySelector('.card__title').innerText,
-            cardCount: card.querySelector('.card__count').innerText,
+            cardCount: +card.querySelector('.card__count').innerText,
             cardWeigth: card.querySelector('.card__cost-weigth').innerText,
             cardPrice: card.querySelector('.card__cost-price').innerText,
 
@@ -19,10 +21,11 @@ window.addEventListener('click', function (event) {
 
         itemInCart = cartWrapper.querySelector(`[data-id="${cardInfo.cardId}"]`);
         // console.log(itemInCart);
-
+        // const toCartButton = event.target.closest('.card__control');
         if (itemInCart) {
             const counterElement = itemInCart.querySelector('[data-counter]');
             counterElement.innerText = parseInt(counterElement.innerText) + parseInt(cardInfo.cardCount);
+            // console.log('ddd  ' + counterElement.innerText);
         } else {
 
 
@@ -46,14 +49,22 @@ window.addEventListener('click', function (event) {
             </div>
                         
         `
-            cartWrapper.insertAdjacentHTML('beforeend', cartItemHtml)
+            cartWrapper.insertAdjacentHTML('beforeend', cartItemHtml);
+
+
+
+
+
+
+
         }
-
-        card.querySelector('[data-counter]').innerText = 1;
-
-        cartToggleStatus();
-
-        calc();
     }
 
+
+
+    // card.querySelector('[data-counter]').innerText = 1;
+
+    // cartToggleStatus();
+
+    calc();
 })

@@ -74,7 +74,7 @@ window.addEventListener('click', function (event) {
         let cardCountSum = parseInt(parent.querySelector('[data-counter]'));
         let cardWeightSum = parseInt(cardWeight);
         
-        console.log(cardCountSum * cardWeightSum);
+        // console.log(cardCountSum * cardWeightSum);
 
     }
     if (event.target.dataset.action === 'plus') {

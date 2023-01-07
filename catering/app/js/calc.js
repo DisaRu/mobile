@@ -17,7 +17,7 @@ function calc() {
         totalPrice += currentPrice;
 
         totalWeght += cartlWeght * countCart;
-        console.log(totalWeght);
+        // console.log(totalWeght);
         
 
        
@@ -40,7 +40,9 @@ function calc() {
         cartDelivery.classList.remove('none');
         cartTottal.innerHTML = `
      
-        
+        <div>Сумма: ${totalPrice} рублей</div>
+        <div>Вес: ${totalWeght} гр.</div>
+
         
         `;
     }
