@@ -99,7 +99,7 @@
     &::before {
         content: '';
         position: absolute;
-        background: url('../../img/el/arrowPrev.svg');
+        background: url('../img/el/arrowPrev.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -123,7 +123,7 @@
     &::after {
         content: '';
         position: absolute;
-        background: url('../../img/el/arrowNext.svg');
+        background: url('../img/el/arrowNext.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
