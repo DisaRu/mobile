@@ -1,0 +1,78 @@
+.about{
+    min-width: 100%;
+    background-image: url(../../img/el/ALS.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.about__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 122px;
+    padding-bottom: 88px;
+}
+
+.about__left {
+    width: 25%;
+}
+.uptitle,
+.about__left-uptitle {
+    position: relative;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    color: #D6000070;
+}
+
+.about__left-uptitle::before,
+.uptitle::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 30px;
+    left: 0;
+    top: 10px;
+    background-color: var(--red);
+
+}
+
+.about__left-title {
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.about__left-more {
+
+}
+
+.about__right {
+    width: 60%;
+    line-height: 32px;
+}
+
+.about__right-list {
+
+    padding-left: 20px;
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.about__right-list-item {
+    position: relative;
+}
+
+.about__right-list-item::before {
+    position: absolute;
+    content: '.';
+    left: -11px;
+    top: -8px;
+    font-size: 30px;
+
+}

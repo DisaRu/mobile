@@ -1,0 +1,43 @@
+:root {
+    --font-family-Raleway: 'Raleway', sans-serif;
+    --font-family-Montserrat: 'Raleway', sans-serif;
+
+
+
+
+    --primary-purple: #674DEE;
+    --secondary-purple: #6C19D8;
+
+    --placeholder-text: #9B9B9B;
+    --placeholder-input: rgba(255, 255, 255, 0.295);
+
+    --red: #D60000;
+    --white: white;
+    --black: black;
+    --gray: #EBEBEB;
+    --gray-light: #8E8E8E;
+    --yellow: #F6921E;
+
+
+}
+
+// button__more
+// uptitle
+
+.title {
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+}
+.button__more{
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 9px;
+    margin-top: 54px;
+    border-left: 3px solid var(--red);
+}

@@ -1,0 +1,13 @@
+.copyright{
+    font-family: var(--font-family-Montserrat);
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-light);
+    padding: 15px 0;
+    border-top: 1px solid #C1C1C180;
+    flex-wrap: wrap;
+}
+
+.copyright__item--red{
+    color: var(--red);
+}

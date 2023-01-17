@@ -1,0 +1,93 @@
+.services {
+    background: #AD0000;
+    width: 100%;
+}
+
+.services__wrapper {
+    display: flex;
+}
+
+.services__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #D60000;
+    padding: 34px;
+    box-shadow: 0px 10px 10px 0px #AD0000;
+}
+
+.services__box-title {
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--white);
+}
+
+.services__box-list {
+
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white);
+    padding-top: 20px;
+
+}
+
+.services__box-list--item {
+    padding-left: 10px;
+    position: relative;
+}
+
+.services__box-list--item::before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: var(--white);
+    left: -6px;
+    top: 10px;
+    font-size: 30px;
+}
+
+.services__box-fon {
+    background: #AD0000;
+    background-image: url(../../img/el/audit.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 5%;
+
+}
+
+.services__box-fon2 {
+    background: #C40000;
+    background-image: url(../../img/el/audit2.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 5%;
+
+}
+
+.services__box-fon3 {
+    background: #AD0000;
+    background-image: url(../../img/el/audit3.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 5%;
+
+}
+
+.services__box-link {
+    font-family: var(--font-family-Raleway);
+    border-bottom: 1px solid var(--white);
+    padding: 20px 0 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--white);
+    width: max-content;
+    
+
+}

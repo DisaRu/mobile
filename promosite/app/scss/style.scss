@@ -1,0 +1,36 @@
+@import 'settings/vars';
+@import 'settings/fonts';
+@import 'settings/reset';
+@import 'settings/libs';
+@import 'settings/global';
+@import 'settings/media';
+
+
+// blocks
+
+@import 'blocks/burger';
+// header
+@import 'blocks/header';
+@import 'blocks/navigation';
+// main
+@import 'blocks/main';
+@import 'blocks/slider';
+@import 'blocks/hero';
+@import 'blocks/about';
+@import 'blocks/services';
+@import 'blocks/facts';
+@import 'blocks/news';
+@import 'blocks/lates';
+@import 'blocks/smallSlider';
+
+// footer
+@import 'blocks/footer';
+@import 'blocks/verticalNavigation';
+@import 'blocks/copyright';
+@import 'blocks/contacts';
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+.slider-wrapper {
+    // max-width: 100%;
+    margin: 0 auto;
+    // border: 10px solid blue;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroslider__control{
+    display: flex;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    padding-left: 15px;
+    
+}
+.slider__control {
+    align-items: center;
+    display: flex;
+    background-color: red;
+    color: var(--white);
+    font-weight: 500;
+    // font-size: 24px;
+    line-height: 26px;
+    height: 71px;
+    width: 570px;
+
+}
+
+.slider__count {
+    // margin-left: 20px;?
+}
+
+.slider__button {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 0, 0, 0);
+    padding: 10px;
+
+
+}
+
+.slider__button-prev,
+.slider__button-next {
+
+   
+
+
+    position: relative;
+}
+
+.slider__button-prev {
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('../../img/el/arrowPrev.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 3px;
+        width: 32px;
+        left: 0;
+        font-size: 30px;
+        z-index: 999;
+        // border: 1px solid red;
+        top:25px;
+
+
+
+
+    }
+}
+
+.slider__button-next {
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('../../img/el/arrowNext.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 2px;
+        width: 32px;
+        left: 20px;
+        top: 25px;
+
+
+
+    }
+}
+
+
+
+
+.slider {
+
+    display: flex;
+    // justify-content:center;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    // left: -1910px;
+    // left: 0;
+    transition: all 1s;
+
+
+}
+
+.slider__item {
+    // border: 10px solid;
+    background-image: url(../../img/hero.png);
+    height: 770px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: auto;
+    position: relative;
+    min-width: 100%;
+
+    // top: 0;
+    // bottom: 0;
+    // right:0;
+    // left: 0;
+
+
+
+}
+
+.slider__item-content {
+    margin-top: 200px;
+
+}

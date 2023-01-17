@@ -1,0 +1,30 @@
+.facts {
+    padding-top: 90px;
+}
+
+
+.facts__list{
+    padding-top: 50px;
+    display: flex;
+}
+.facts__list-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 25%;
+}
+
+.facts__list-item--num {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--red);
+}
+
+.facts__list-item--text {
+    font-family: var(--font-family-Raleway);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    /* or 110% */
+}

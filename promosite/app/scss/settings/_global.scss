@@ -1,0 +1,26 @@
+html,
+body {
+	width: 100%;
+	font-family: var(--font-family-Raleway);
+	color: var(--black);
+	outline: 1px solid red;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	width: 1920px;
+	margin: 0 auto;
+	// padding: 0 15px;
+}
+

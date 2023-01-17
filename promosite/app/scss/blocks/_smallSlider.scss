@@ -1,0 +1,67 @@
+.smallSlider{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+}
+.smallSlider__line{
+    flex: 1 0;
+}
+.smallSlider__item {
+    display: flex;
+    padding: 60px 0;
+    gap: 20px;
+}
+
+
+
+.smallSlider__control {
+    width: 100px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    color: red;
+    align-self: flex-end;
+}
+
+.smallSlider__button-prev {
+    position: relative;
+    
+    &::before {
+        // color: red;
+        content: '';
+        position: absolute;
+        background: url('../../img/el/arrowNextRed.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 3px;
+        width: 32px;
+        font-size: 30px;
+        left: -10px;
+
+
+
+
+
+    }
+}
+
+.smallSlider__button-next {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url('../../img/el/arrowPrevRed.svg');
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 2px;
+        width: 36px;
+        // left: -10px;
+
+    }
+}
