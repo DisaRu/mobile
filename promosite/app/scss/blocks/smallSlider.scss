@@ -32,7 +32,7 @@
         // color: red;
         content: '';
         position: absolute;
-        background: url('../../img/el/arrowNextRed.svg');
+        background: url('../img/el/arrowNextRed.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -54,7 +54,7 @@
     &::after {
         content: '';
         position: absolute;
-        background: url('../../img/el/arrowPrevRed.svg');
+        background: url('../img/el/arrowPrevRed.svg');
 
         background-position: center center;
         background-repeat: no-repeat;
