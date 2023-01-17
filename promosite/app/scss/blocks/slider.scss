@@ -49,12 +49,12 @@
 
 .slider__item {
     // border: 10px solid;
-    background-image: url(../../img/hero.png);
+    background-image: url(/app/img/hero.png);
     height: 770px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    // width: auto;
+    width: auto;
     position: relative;
     min-width: 100%;
 
