@@ -1,6 +1,6 @@
 :root {
     --font-family-Raleway: 'Raleway', sans-serif;
-    --font-family-Montserrat: 'Raleway', sans-serif;
+    --font-family-Montserrat: 'Montserrat', sans-serif;
 
 
 
@@ -30,7 +30,8 @@
     font-size: 48px;
     line-height: 58px;
 }
-.button__more{
+
+.button__more {
     font-family: var(--font-family-Raleway);
     font-style: normal;
     font-weight: 600;
@@ -40,4 +41,18 @@
     padding-left: 9px;
     margin-top: 54px;
     border-left: 3px solid var(--red);
+}
+
+.attendance__box-item--link,
+.link__more {
+    color: var(--red);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bread {
+    font-size: 102px;
+}
+.hidden{
+    display: none;
 }

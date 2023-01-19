@@ -23,37 +23,8 @@
 // }
 
 
-const slider = document.querySelector('.slider');
-const sliderPrev = document.querySelector('.slider__button-prev');
-const sliderNext = document.querySelector('.slider__button-next');
-
-let sliderItemWrapper = document.querySelector('.slider-wrapper ');
-
-let sliderItem = document.querySelector('.slider__item ');
-
-addEventListener('resize', function(){
-    sliderItem.style.width = sliderItemWrapper.offsetWidth;
-    console.log(sliderItem.offsetWidth);
-
-})
 
 
 
-let sliderItemWidth = sliderItem.offsetWidth;
-// console.log(sliderItemWidth);slider-wrapper
 
-let sliderCount = 0;
-let sliderMove = 0;
-sliderPrev.addEventListener('click', function(){
-    sliderCount = ++sliderCount;
-    sliderMove += sliderItemWidth;
-    slider.style.left = sliderMove+'px';
-    console.log(sliderCount);
-});
-
-console.log(sliderMove);
-sliderNext.addEventListener('click', function(){
-    sliderMove +=  -sliderItemWidth;
-    slider.style.left = sliderMove+'px';
-});
 

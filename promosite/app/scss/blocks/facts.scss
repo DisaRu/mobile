@@ -1,17 +1,20 @@
 .facts {
-    padding-top: 90px;
+    padding: 40px 0;
 }
 
 
 .facts__list{
     padding-top: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .facts__list-item {
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 25%;
+    flex: 1;
 }
 
 .facts__list-item--num {
@@ -27,4 +30,8 @@
     font-size: 20px;
     line-height: 22px;
     /* or 110% */
+}
+.page__about-facts__list--wrapper{
+    background-color: var(--gray);
+    padding-bottom: 50px;
 }

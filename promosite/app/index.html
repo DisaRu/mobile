@@ -12,7 +12,8 @@
 
 </head>
 
-<body>
+<body class="body">
+
 
 
     <div class="page-wrapper">
@@ -23,13 +24,13 @@
 
             <nav class="header-menu container">
                 <div class="header__logo">
-                    <img src="./img/el/logo.svg" alt="" class="logo__img">
+                   <a href="/"><img src="./img/el/logo.svg" alt="" class="logo__img"></a> 
                 </div>
                 <!-- _navigation.scss -->
                 <ul class="navigation">
-                    <li class="navigation__item"><a class="navigation__item-link" href="#">О нас</a></li>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#">Поддержка бизнеса</a></li>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#">Практики</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="./about.html">О нас</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="./services.html">Поддержка бизнеса</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="./accountant.html">Практики</a></li>
                     <li class="navigation__item"><a class="navigation__item-link" href="#">Социальные проекты</a></li>
                     <li class="navigation__item"><a class="navigation__item-link" href="#">Контакты</a></li>
                 </ul>
@@ -43,21 +44,20 @@
 
         </header>
         <!--_header.scss end -->
-
         <section class="main">
             <!-- _hero.scss -->
             <div class="hero">
                 <!--_slider.scss -->
-                <div class="slider-wrapper">
+                <div class="slider-wrapper ">
 
-                    <div class="slider">
+                    <div class="slider container-fluid">
 
                         <div class="slider__item ">
 
                             <div class="slider__item-content container">
 
                                 <h1 class="hero__title">Консалтинговая <br>
-                                    компания ALS
+                                    компания <span class="hero__title-redline">ALS</span>
                                 </h1>
 
                                 <p class="hero__text">Первоклассный бухгалтерский сервис, надёжный и компетентный
@@ -68,6 +68,7 @@
 
 
                         </div>
+                        
                         <div class="slider__item ">
 
                             <div class="slider__item-content container">
@@ -123,6 +124,7 @@
                         <div class="slider__count">1/4</div>
                         <button class="slider__button slider__button-next"></button>
                     </div>
+
                 </div>
             </div>
             <!-- _hero.scss  end-->
@@ -223,7 +225,7 @@
             </div>
             <!-- _services.scss end-->
             <!-- _facts.scss -->
-            <div class="facts">
+            <div class="facts container">
                 <div class="facts__uptitle uptitle">Цифры и факты</div>
                 <h2 class="facts__title title">Чего мы достигли</h2>
                 <ul class="facts__list">
@@ -250,8 +252,8 @@
             </div>
             <!-- _facts.scss end-->
             <!-- _news.scss -->
-            <div class="news">
-                <div class=" news__wrapper container">
+            <div class="news container">
+                <div class=" news__wrapper ">
                     <div class="title__inner">
                         <div class="news__uptitle uptitle">Новости</div>
                         <h3 class="news__title title">Что нового</h3>
@@ -299,8 +301,7 @@
             </div>
             <!-- _news.scss end-->
             <!-- _partners.scss -->
-
-            <div class="partners">
+            <div class="partners container">
                 <div class="partners__wrapper">
                     <div class="partners__uptitle uptitle">Партнёры</div>
                     <h3 class="partners__title title">Клиенты компании</h3>
@@ -337,17 +338,13 @@
                         </div>
 
                     </div>
-
+                    <!-- _smallSlider.scss end-->
                 </div>
 
             </div>
-
+            <!-- _partners.scss end-->
         </section>
-
-
-
         <!-- _footer.scss -->
-
         <footer class="footer">
 
             <div class="footer__inner container">
@@ -410,7 +407,7 @@
 
 
     </div>
-    <script src="js/main.min.js"></script>
+    <script src="js/slider.js"></script>
 
 
 </body>

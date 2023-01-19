@@ -1,15 +1,13 @@
 html,
 body {
-	width: 100%;
+	min-width: 100%;
 	font-family: var(--font-family-Raleway);
 	color: var(--black);
 	outline: 1px solid red;
 }
 
 .page-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+
 }
 
 .container {
@@ -19,8 +17,8 @@ body {
 }
 
 .container-fluid {
-	width: 1920px;
+	max-width: 1920px;
 	margin: 0 auto;
-	// padding: 0 15px;
+
 }
 

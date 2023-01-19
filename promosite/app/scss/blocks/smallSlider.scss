@@ -1,16 +1,21 @@
 .smallSlider{
     min-width: 100%;
-    display: flex;
-    flex-direction: column;
+   
+    // flex-direction: column;
     // justify-content: space-between;
 }
 .smallSlider__line{
-    flex: 1 0;
+    display: flex;
 }
 .smallSlider__item {
     display: flex;
+    flex-wrap: wrap;
     padding: 60px 0;
     gap: 20px;
+    & img{
+        flex: 1;
+
+    }
 }
 
 

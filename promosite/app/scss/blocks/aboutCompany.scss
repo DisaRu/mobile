@@ -1,0 +1,140 @@
+.about__company {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.about__company-top {
+    position: relative;
+    min-width: 100%;
+    background-image: url(../../img/about.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    // padding: 40px 0;
+
+}
+
+.about__company-top--overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px 0;
+
+}
+.bread,
+.about__company-bread {
+    font-family: var(--font-family-Raleway);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.about__company-title {
+    font-family: var(--font-family-Raleway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--white);
+    padding: 20px 0;
+}
+
+
+
+.about__company-body {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+}
+
+.about__company-left {
+    width: 40%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about__company-left--title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.about__company-left--list {
+    list-style: decimal !important;
+    padding: 5px 20px;
+}
+
+.about__company-left--text {
+    padding: 5px 0;
+}
+
+.about__company-right {
+    width: 44%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+}
+
+
+
+.about__company-right::after {
+    position: absolute;
+    content: '';
+    height: 220px;
+    width: 30px;
+    background-color:var(--red);
+    bottom: 60%;
+    right: -30px;
+}
+
+.company-right__content {
+
+    padding: 30px 100px 40px 40px;
+    background: #EBEBEB;
+    position: relative;
+}
+
+.company-right__content::before {
+    position: absolute;
+    content: '';
+    background-image: url(../../img/ALS-white.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 90px;
+    right: 0;
+    top: 0;
+
+}
+.company-right__content::after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 200px;
+    background-color:var(--red);
+    bottom: -10px;
+    right: 10%;
+}
+.about__company-right--title {
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.about__company-right--text {
+    padding: 5px 0;
+}
+
+.about__company-button__more {
+    background-color: transparent;
+}
