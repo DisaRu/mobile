@@ -23,14 +23,14 @@
 
             <nav class="header-menu container">
                 <div class="header__logo">
-                    <a href="/"><img src="./img/el/logo.svg" alt="" class="logo__img"></a>
+                    <a href="index.html"><img src="./img/el/logo.svg" alt="" class="logo__img"></a>
                 </div>
                 <!-- _navigation.scss -->
                 <ul class="navigation">
                     <li class="navigation__item"><a class="navigation__item-link" href="./about.html">О нас</a></li>
                     <li class="navigation__item"><a class="navigation__item-link" href="./services.html">Поддержка
                             бизнеса</a></li>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#">Практики</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="./accountant.html">Практики</a></li>
                     <li class="navigation__item"><a class="navigation__item-link" href="#">Социальные проекты</a></li>
                     <li class="navigation__item"><a class="navigation__item-link" href="#">Контакты</a></li>
                 </ul>
@@ -153,40 +153,55 @@
             <!-- _facts.scss end-->
             <!-- _partners.scss -->
             <div class="partners">
-                <div class="partners__wrapper">
+                <div class="partners__wrapper container">
                     <div class="partners__uptitle uptitle">Партнёры</div>
                     <h3 class="partners__title title">Клиенты компании</h3>
                 </div>
                 <div class="partners__slider">
                     <!-- _smallSlider.scss -->
                     <div class="smallSlider">
-                        <div class="smallSlider__wrapper">
+
+                        <div class="smallSlider__wrapper container">
 
 
-                            <div class="smallSlider__line">
+                            <div class=" smallSlider__line">
 
                                 <div class="smallSlider__item">
-                                    <img src="./img/partners1.png" alt="" srcset="">
-                                    <img src="./img/partners2.png" alt="" srcset="">
-                                    <img src="./img/partners3.png" alt="" srcset="">
-                                    <img src="./img/partners4.png" alt="" srcset="">
+                                    <img src="./img/partners1.png" alt="">
+                                    <img src="./img/partners2.png" alt="">
+                                    <img src="./img/partners3.png" alt="">
+                                    <img src="./img/partners4.png" alt="">
+                                </div>
+
+                                <div class="smallSlider__item">
+                                    <img src="./img/partners1.png" alt="">
+                                    <img src="./img/partners2.png" alt="">
+                                    <img src="./img/partners3.png" alt="">
+                                    <img src="./img/partners4.png" alt="">
+                                </div>
+
+                                <div class="smallSlider__item">
+                                    <img src="./img/partners1.png" alt="">
+                                    <img src="./img/partners2.png" alt="">
+                                    <img src="./img/partners3.png" alt="">
+                                    <img src="./img/partners4.png" alt="">
                                 </div>
 
 
                             </div>
 
-
+                            <div class="smallSlider__control">
+                                <button class="  smallSlider__button-prev"></button>
+                                <div class="smallSlider__count ">1/ <span class="smallSlider__count-show">1</span></div>
+                                <button class=" smallSlider__button-next"></button>
+                            </div>
 
 
                         </div>
 
 
 
-                        <div class="smallSlider__control slider__control ">
-                            <button class="slider__button slider__button-prev smallSlider__button-prev"></button>
-                            <div class="slider__count">1/4</div>
-                            <button class="slider__button slider__button-next smallSlider__button-next"></button>
-                        </div>
+
 
                     </div>
                     <!-- _smallSlider.scss end-->
@@ -262,7 +277,7 @@
 
 
     </div>
-    <script src="js/main.min.js"></script>
+    <script src="js/smallSlider.js"></script>
 
 
 </body>
