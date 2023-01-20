@@ -7,7 +7,7 @@ let count = 0;
 
 
 function init() {
-    console.log(width);
+    // console.log(width);
     width = document.querySelector('.slider-wrapper').offsetWidth;
     // slider.style.width = width * sliderItem.length + 'px';
     sliderItem.forEach(item => {
@@ -26,7 +26,7 @@ btnNext.addEventListener('click', function(){
     }
     document.querySelector('.slider__count-show').innerText = count+1;
     roll()
-    console.log(count+1);
+    // console.log(count+1);
 
 })
 btnPrev.addEventListener('click', function(){
@@ -36,7 +36,7 @@ btnPrev.addEventListener('click', function(){
     }
     document.querySelector('.slider__count-show').innerText = count+1;
     roll()
-    console.log(count+1);
+    // console.log(count+1);
 
 })
 

@@ -1,19 +1,38 @@
-.smallSlider{
+.smallSlider {
     min-width: 100%;
-   
-    // flex-direction: column;
-    // justify-content: space-between;
+    padding: 60px 0;
+
 }
-.smallSlider__line{
+
+.smallSlider__wrapper {
+    // max-width: 300px;
+    overflow: hidden;
+}
+
+.smallSlider__line {
+
+
+    max-width: 100%;
     display: flex;
+    transition: all ease-in .4s;
+
+
+
 }
+
 .smallSlider__item {
+    // min-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0;
-    gap: 20px;
-    & img{
-        flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    gap: 7px;
+
+    & img {
+        // max-width: 25%;
+        // flex: 1;
+        // object-fit: cover;
 
     }
 }
@@ -21,30 +40,31 @@
 
 
 .smallSlider__control {
-    width: 100px;
     display: flex;
-    padding: 0;
-    margin: 0;
     background-color: #fff;
     color: red;
-    align-self: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-top: 20px;
+
 }
 
 .smallSlider__button-prev {
     position: relative;
-    
+
     &::before {
-        // color: red;
         content: '';
         position: absolute;
         background: url('../img/el/arrowNextRed.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 3px;
-        width: 32px;
+        height: 10px;
+        width: 40px;
         font-size: 30px;
-        left: -10px;
+        left: -35px;
+        bottom: -6px;
 
 
 
@@ -64,9 +84,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 2px;
-        width: 36px;
-        // left: -10px;
+        height: 10px;
+        width: 40px;
+        bottom: -6px;
 
     }
 }
