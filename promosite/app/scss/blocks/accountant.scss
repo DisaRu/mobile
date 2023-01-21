@@ -1,13 +1,10 @@
 .accountant {
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .accountant__bread {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: start;
-    // justify-content: start;
-    // text-align: left !important;
+
     padding-top: 10px;
 }
 
@@ -27,7 +24,9 @@
     padding: 20px 0 40px;
 }
 
-.accountant__body {}
+.accountant__body {
+    
+}
 
 .accountant__wrapper {
     display: flex;
@@ -61,7 +60,7 @@
 }
 
 .accountant__content {
-    height: 100vh;
+    min-height: 100vh;
     // width: 75%;
     font-family: var(--font-family-Raleway);
     font-style: normal;
@@ -77,6 +76,7 @@
     // height: 0;
     position: absolute;
     transform: rotateY(17190deg);
+    // display: none;
     
 }
 
