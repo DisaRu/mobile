@@ -1,18 +1,20 @@
 .attendance__box {
     gap: 20px;
     display: flex;
+
     flex-wrap: wrap;
     padding: 40px 0 40px;
 }
 
 
 .attendance__box-item {
-    width: 30%;
+    flex: 1;    
     padding: 20px 40px 30px 20px;
     background-color: var(--gray);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .attendance__box-item--title {

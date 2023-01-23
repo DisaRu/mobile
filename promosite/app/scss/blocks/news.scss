@@ -4,8 +4,64 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .news {
     // width: 25%;
+}
+
+.news__wrapper-tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.news__tabs-flex {
+    
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 40px;
+    gap: 40px !important;
+    align-items: center;
+    
+    
+    
+    
+}
+
+.news__tab nbv  {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 6px;
+    padding: 5px 50px;    
+    padding-right: 35px;
+    padding-left: 35px !important;
+
+
+}
+
+
+.news__tab--active.accountant__tab--active {
+    color: var(--red);
+    font-weight: 500;
+    border-left: 0px solid var(--red);
+    border-bottom: 3px solid var(--red);
+    
+
+}
+.news__smallSlider--wrapper{
+    min-width: 100%;
+}
+.news__smallSlider--line{
+    // display: flex !important;
+    // flex-wrap: nowrap !important;
+    // flex-direction: column !important;
 }

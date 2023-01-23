@@ -45,6 +45,16 @@
     font-size: 18px;
     line-height: 21px;
     // padding-top: 23px;
+
+    @media screen and (max-width: 768px) {
+
+display: none;
+        
+
+
+
+    }
+
 }
 
 .accountant__tab {

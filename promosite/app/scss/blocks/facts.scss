@@ -1,5 +1,5 @@
 .facts {
-    padding: 40px 0;
+    margin: 40px 0;
 }
 
 
@@ -7,12 +7,13 @@
     padding-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .facts__list-item {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     flex: 1;
 }

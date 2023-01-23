@@ -6,13 +6,22 @@
 }
 .about__wrapper {
     display: flex;
+    // flex-direction: column;
     justify-content: space-around;
     padding-top: 122px;
     padding-bottom: 88px;
+    flex-wrap: wrap;
+    gap: 40px;
+
+
+
 }
 
 .about__left {
-    width: 25%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .uptitle,
 .about__left-uptitle {
@@ -46,11 +55,14 @@
 }
 
 .about__left-more {
+   justify-self:self-end;
+
 
 }
 
 .about__right {
-    width: 60%;
+    // width: 60%;
+    flex: 1;
     line-height: 32px;
 }
 

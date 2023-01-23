@@ -16,6 +16,15 @@
     background: #D60000;
     padding: 34px;
     box-shadow: 0px 10px 10px 0px #AD0000;
+
+    @media screen and (max-width: 768px) {
+
+        flex: 0 1 auto;
+        
+
+
+
+    }
 }
 
 .services__box-title {
@@ -90,6 +99,6 @@
     line-height: 18px;
     color: var(--white);
     width: max-content;
-    
+
 
 }

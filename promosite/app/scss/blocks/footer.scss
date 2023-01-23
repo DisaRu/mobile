@@ -2,7 +2,7 @@
     // width: 100%;
     background-color: var(--gray);
     color: var(--black);
-    
+
 }
 
 .footer__inner {
@@ -10,5 +10,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 30px;
 }
-
