@@ -21,18 +21,22 @@
 
 .news__tabs-flex {
     
-    display: flex;
+    display: flex !important;
     flex-direction: row !important;
     margin-top: 40px;
     gap: 40px !important;
-    align-items: center;
+    line-height: 30px !important;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+
     
     
     
     
 }
 
-.news__tab nbv  {
+.news__tab {
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
@@ -58,7 +62,7 @@
 
 }
 .news__smallSlider--wrapper{
-    min-width: 100%;
+    // min-width: 100%;
 }
 .news__smallSlider--line{
     // display: flex !important;
