@@ -2,24 +2,24 @@ html,
 body {
 	max-width: 100%;
 	font-size: 1rem;
-	// overflow-x: hidden;
-	font-family: var(--font-family);
+	overflow-x: hidden;
+	font-family: var(--regular);
+	// font-family: var(--medium);
+	// font-family: var(--bold);
 	background-color: var(--bg-color);
 }
 
-.page_wrapper {
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .container {
 
-	max-width: 1405px;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
 
 }
 
@@ -40,3 +40,4 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
+

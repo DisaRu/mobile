@@ -1,0 +1,26 @@
+.btn {
+    border-radius: 6px;
+    padding: 14px 42px;
+    font-family: var(--bold);
+}
+
+.promo__btn {
+width: 100%;
+white-space: nowrap;
+}
+
+.banner__btn {
+    padding: 14px 42px;
+
+}
+
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--white);
+
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid var(--black);
+}

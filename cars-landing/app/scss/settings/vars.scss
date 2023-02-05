@@ -1,0 +1,46 @@
+:root {
+    --regular: 'regular', sans-serif;
+    --medium: 'medium', sans-serif;
+    --bold: 'bold', sans-serif;
+
+    --black: #010101;
+    --white: white;
+
+    --gray: #30363A;
+    --bronze: #C78E66;
+    --orange: #ED6D1F;
+
+    --aqua: #26B7BC;
+
+    --bg-color: rgba(235, 235, 235, 0.199);
+
+
+}
+
+
+.text {
+    font-family: var(--regular);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+}
+
+.text-orange {
+    color: var(--orange);
+    font-family: var(--bold);
+}
+
+.title {
+    font-family: var(--regular);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: var(--black);
+}
+
+.title-bold {
+    font-family: var(--bold);
+}

@@ -5,37 +5,28 @@
 @import 'settings/global';
 
 
-// blocks
+// sections
 
 
-@import 'blocks/header';
-@import 'blocks/main';
-@import 'blocks/footer';
-@import 'blocks/media';
-@import 'blocks/burger';
+@import 'section/header';
+@import 'section/main';
+@import 'section/footer';
 
 // components
+@import 'components/burger';
+@import 'components/navigation.scss';
+@import 'components/buttons.scss';
+@import 'components/timer.scss';
+@import 'components/promo.scss';
+@import 'components/sales.scss';
+@import 'components/banner.scss';
+@import 'components/cars.scss';
+@import 'components/cards.scss';
 
-@import 'blocks/orderTotal';
 
 
 
 
-.button {
-    background-color: rgb(230, 199, 29);
- }
-
-
-
-.tac {
-    text-align: center;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 
 

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.min.css">
-
     <title>Car Landing</title>
 
 </head>
@@ -17,10 +16,47 @@
 
 
 
+    <!-- header.scss -->
+    <header class="header">
 
-    <header class="header ">
-     
+        <div class="header__top container">
+            <div class="header__logo">
+                <img src="./images/logo.svg" alt="Site logo" class="header__logo-img">
+                <span class="header__logo-text">Официальный дилер <br>
+                    exeed Максимум Обводный</span>
+            </div>
 
+            <div class="header__links">
+                <a class="header__links-tel" href="tel:+78126024686">+7 (812) 602-46-86</a>
+                <a class="header__links-loc" href="google.com">Найти нас на карте</a>
+                <a class="header__links-order" href="#">Заявка</a>
+            </div>
+        </div>
+
+        <div class="header__navigation">
+            <div class="navigation__wrapper container">
+                <!-- navigation.scss -->
+                <ul class="navigation ">
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> TXL</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> TXL 2.0</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> LX</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> LX 1.6 AWD</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> VX</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> VX LE</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Тест-драйв</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Trade-in</a></li>
+                    <div class="line"></div>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Сервис</a></li>
+                </ul>
+            </div>
+        </div>
 
 
 
@@ -29,8 +65,170 @@
 
     <section class="main ">
 
-        Hello Git
-     
+        <!-- promo.scss -->
+        <div class="promo__wrapper">
+            <div class="promo container">
+
+                <div class="promo__left">
+                    <div class="promo__left-title title">Реализация склада в <span class="title-bold">EXEED Максимум
+                            Обводный</span>
+                    </div>
+                    <!-- sales.scss -->
+
+                    <div class="sales">
+
+                        <div class="sales__item">
+                            <img class="sales__item-icon" src="./images/sales/360-768-1280-icons.svg"></img>
+                            <p class="sales__item-text text">Рассрочка <span class="text-orange"> под 0%*
+                                    годовых</span></p>
+                        </div>
+                        <div class="sales__item">
+                            <img class="sales__item-icon" src="./images/sales/360-768-1280-sdfghjk.svg"></img>
+                            <p class="sales__item-text text">Гарантированные подарки от официального дилера </p>
+                        </div>
+                        <div class="sales__item">
+                            <img class="sales__item-icon" src="./images/sales/360-768-1280-sdfghjkl.svg"></img>
+                            <p class="sales__item-text text">Выгода до <span class="text-orange"> 50% </span>на первый
+                                визит
+                                на сервис</p>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- timer.scss -->
+                    <div class="timer__wrapper">
+                        <div class="timer-text">До окончания акции осталось:</div>
+                        <div id="timer">
+                            <div class="circle" style="--clr:#26B7BC;">
+                                <div class="dots day_dot"></div>
+                                <svg>
+                                    <circle cx="15" cy="15" r="32"></circle>
+                                    <circle cx="15" cy="15" r="32" id="dd"></circle>
+                                </svg>
+                                <div class="days" id="days">00 </div>
+                            </div>
+
+                            <div class="circle" style="--clr:#F3BE54;">
+                                <div class="dots hr_dot"></div>
+                                <svg>
+                                    <circle cx="15" cy="15" r="32"></circle>
+                                    <circle cx="15" cy="15" r="32" id="hr"></circle>
+                                </svg>
+                                <div class="hours" id="hours ">00 </div>
+                            </div>
+
+                            <div class="circle" style="--clr:#C78E66;">
+                                <div class="dots min_dot"></div>
+                                <svg>
+                                    <circle cx="15" cy="15" r="32"></circle>
+                                    <circle cx="15" cy="15" r="32" id="mm"></circle>
+                                </svg>
+                                <div class="minutes" id="min">00</div>
+                            </div>
+
+                            <div class="circle" style="--clr:#712532;">
+                                <div class="dots sec_dot"></div>
+                                <svg>
+                                    <circle cx="15" cy="15" r="32"></circle>
+                                    <circle cx="15" cy="15" r="32" id="ss"></circle>
+                                </svg>
+                                <div class="seconds" id="seconds">00<span>seconds</span></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- buttons.scss -->
+                    <button class="promo__btn btn btn-orange">
+                        получить предложение
+                    </button>
+
+                </div>
+
+                <div class="promo__right">
+                    <!-- banner.scss -->
+                    <div class="banner">
+                        <img class="banner__img" src="./images/banner/360-768-1280-banner.png" alt="Cars banner">
+                        <div class="banner__text">Премиальный EXEED <br>
+                            с выгодой
+                            <span class="title-bold"> до 1 000 000
+                                ₽</span>
+                        </div>
+                        <button class="banner__btn btn btn-transparent">узнать цену по акции </button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- cars.scss -->
+        <div class="cars__wrapper container">
+
+            <h2 class="cars__title title">Exeed <span class="title-bold">в наличии</span> у официального дилера</h2>
+            <p class="cars__text text">Оставьте заявку, чтобы узнать больше о характеристиках, доступных цветовых
+                решениях
+                и комплектациях новых моделей Exeed.</p>
+            <div class="cars__inner">
+
+                <!-- cards.scss -->
+                <ul class="cards">
+                    <li class="cards__item">
+                        <div class="cards__img">
+                            <img src="./images/carCards/360-768-1280-img.png" alt="" srcset="">
+                        </div>
+                        <h2 class="cards__title title title-bold">EXEED txl <br> Выгода<span class="text-orange">
+                                до 660 000
+                                ₽</span></h2>
+
+                        <div class="sales">
+
+                            <div class="sales__item">
+                                <img class="sales__item-icon" src="./images/sales/360-768-1280-icons.svg"></img>
+                                <p class="sales__item-text text">Рассрочка <span class="text-orange"> под 0%*
+                                        годовых</span></p>
+                            </div>
+                            <div class="sales__item">
+                                <img class="sales__item-icon" src="./images/sales/360-768-1280-sdfghjk.svg"></img>
+                                <p class="sales__item-text text">Гарантированные подарки от официального дилера </p>
+                            </div>
+                            <div class="sales__item">
+                                <img class="sales__item-icon" src="./images/sales/360-768-1280-sdfghjkl.svg"></img>
+                                <p class="sales__item-text text">Выгода до <span class="text-orange"> 50% </span>на
+                                    первый
+                                    визит
+                                    на сервис</p>
+                            </div>
+
+                            <button class=" btn btn-orange">
+                                узнать цену по акции 
+                            </button>
+
+                            <button class="btn btn-transparent">
+                                узнать больше о модели
+                            </button>
+                        </div>
+
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+        </div>
+
+
+
+
+
     </section>
 
 
@@ -46,8 +244,9 @@
 
 
 
-    <script src="js/main.min.js"></script>
 
+    <script src="js/main.min.js"></script>
+    <script src="js/timer.js"></script>
 
 
 </body>

@@ -1,0 +1,35 @@
+.header{
+    background-color:var(--gray);
+    color: var(--white);
+    margin-bottom: 30px;
+
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+      
+    }
+
+    &__logo{
+        padding: 22px 0;
+        display: flex;
+        gap: 20px;
+
+        &-text{
+            border-left: 1px solid var(--bronze);
+            padding-left: 20px;
+        }
+    }
+
+    &__links{
+        display: flex;
+        gap: 50px;
+    }
+
+    &__navigation{
+        border-top: 1px solid var(--bronze);
+    }
+}
+
