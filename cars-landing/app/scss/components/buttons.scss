@@ -2,15 +2,24 @@
     border-radius: 6px;
     padding: 14px 42px;
     font-family: var(--bold);
+    &:hover{
+        transform: scale(.99);
+    }
 }
 
 .promo__btn {
 width: 100%;
 white-space: nowrap;
-}
 
+}
+.cards__item-btn{
+    border: 1px solid var(--black);
+}
 .banner__btn {
     padding: 14px 42px;
+    z-index: 1000;
+    cursor: pointer;
+    border: 1px solid var(--white);
 
 }
 
@@ -22,5 +31,5 @@ white-space: nowrap;
 
 .btn-transparent {
     background-color: transparent;
-    border: 1px solid var(--black);
+    // border: 1px solid var(--black);
 }
