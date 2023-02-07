@@ -8,7 +8,7 @@ let hr = document.getElementById('hr');
 let mm = document.getElementById('mm');
 let ss = document.getElementById('ss');
 
-let endDate = '02/06/2023 12:9:00';
+let endDate = '05/06/2023 12:9:00';
 
 let x = setInterval(function () {
     let now = new Date(endDate).getTime();
@@ -21,10 +21,7 @@ let x = setInterval(function () {
     let s = Math.floor((distance % (1000 * 60)) / (1000));
 
 
-    // days.innerHTML = s;
-    // hours.innerHTML = h + ' <br><span>hours</span';
-    // // minutes.innerHTML = m + ' <br><span>minutes</span';
-    // seconds.innerHTML = s + ' <br><span>seconds</span';
+
     document.querySelector('.days').innerHTML = d + '<br> <span>Дня</span>';
     document.querySelector('.hours').innerHTML = h + '<br> <span>Часов</span>';
     document.querySelector('.minutes').innerHTML = m + '<br> <span>Минут</span>';

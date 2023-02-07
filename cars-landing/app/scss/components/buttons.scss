@@ -1,23 +1,29 @@
 .btn {
     border-radius: 6px;
-    padding: 14px 42px;
+    padding: 14px 40px;
     font-family: var(--bold);
+    text-transform: uppercase;
+    white-space: nowrap;
     &:hover{
-        transform: scale(.99);
+        opacity: .9;
+
     }
 }
 
 .promo__btn {
-width: 100%;
-white-space: nowrap;
+    padding: 14px 0px;
+    width: 100%;
+    white-space: nowrap;
 
 }
-.cards__item-btn{
+
+.cards__item-btn {
     border: 1px solid var(--black);
 }
+
 .banner__btn {
     padding: 14px 42px;
-    z-index: 1000;
+    // z-index: 1000;
     cursor: pointer;
     border: 1px solid var(--white);
 
@@ -25,11 +31,29 @@ white-space: nowrap;
 
 .btn-orange {
     background-color: var(--orange);
+    border: 1px solid var(--orange);
     color: var(--white);
+    // padding-top: -1px;
+    &:hover {
+        opacity:.9;
+        border: 1px solid var(--black);
+        background-color: var(--transparent);
+        color: var(--black);
+    }
 
 }
 
 .btn-transparent {
     background-color: transparent;
-    // border: 1px solid var(--black);
+    border: 1px solid;
+    left: 50%;
+    transition: all 0.3s;
+    &:hover {
+        opacity:.9;
+        background-color: var(--orange);
+        border: none;
+        color: var(--white);
+    }
+
+    
 }

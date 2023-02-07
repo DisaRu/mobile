@@ -1,0 +1,28 @@
+.photo__wrapper{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.photo{
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+
+}
+
+.photo::-webkit-scrollbar {
+    width: auto;
+    height: 10px;
+}
+
+.photo::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    background: rgba(37, 37, 37, 0.253);        /* цвет зоны отслеживания */
+    width: 5px;               /* ширина всей полосы прокрутки */
+}
+
+.photo::-webkit-scrollbar-thumb {
+    background-color:#37457E ;    /* цвет бегунка */
+    border-radius: 10px;       /* округлось бегунка */
+    border: 1px solid rgba(37, 37, 37, 0.253);  /* отступ вокруг бегунка */
+  }

@@ -9,7 +9,7 @@
     --gray: #30363A;
     --bronze: #C78E66;
     --orange: #ED6D1F;
-
+    --bordo: #712532;
     --aqua: #26B7BC;
 
     --bg-color: rgba(235, 235, 235, 0.199);
@@ -27,6 +27,10 @@
     letter-spacing: 0.03em;
 }
 
+.text-opacity {
+    opacity: 0.5;
+}
+
 .text-orange {
     color: var(--orange);
     font-family: var(--bold);
@@ -42,5 +46,10 @@
 }
 
 .title-bold {
+    font-family: var(--bold);
+}
+
+.title-blue {
+    color: var(--aqua);
     font-family: var(--bold);
 }

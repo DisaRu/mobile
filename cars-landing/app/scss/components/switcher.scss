@@ -1,0 +1,32 @@
+.switcher {
+    // width: 80%;
+}
+
+.switcher__btns {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.switcher__button {
+    height: 60px;
+    width: 60px;
+    background-color: var(--clr);
+    border-radius: 8px;
+
+}
+
+.switcher__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.switcher__img-active {
+    display: block;
+}

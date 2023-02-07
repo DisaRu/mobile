@@ -1,0 +1,42 @@
+.order__wrapper {
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 80px 6%;
+    border-radius: 12px;
+}
+
+.order__text {
+    padding: 20px 0 40px;
+}
+
+.order__form-number {
+    width: 80%;
+    padding: 12px 0 12px 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    /* identical to box height, or 26px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    /* middle grey */
+
+    color: #9E9691;
+}
+
+.order__form-text {
+    padding: 10px 0 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+
+}
+.order__button{
+    width: 50%;
+    color: var(--white);
+}

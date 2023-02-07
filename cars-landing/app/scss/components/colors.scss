@@ -1,0 +1,17 @@
+.colors {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__inner {
+
+        
+    }
+
+    @media (max-width: 768px) {}
+}
+.colors__inner-width {
+    // max-width: 30%;
+    flex: 1 0 ;
+}
