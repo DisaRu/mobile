@@ -22,7 +22,9 @@ body {
 	padding: 0 20px;
 
 }
-
+.container-width{
+	padding: 0 6%;
+}
 .header {
 	width: 100%;
 
@@ -41,3 +43,19 @@ body {
 	flex: 0 0 auto;
 }
 
+
+::-webkit-scrollbar {
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px; 
+    // background: rgba(37, 37, 37, 0.253);        /* цвет зоны отслеживания */
+    max-width: 15px;               /* ширина всей полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#525a77 ;    /* цвет бегунка */
+    border-radius: 10px;       /* округлось бегунка */
+    // border: 1px solid rgba(37, 37, 37, 0.253);  /* отступ вокруг бегунка */
+  }

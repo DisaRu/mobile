@@ -11,7 +11,6 @@ modalClose.addEventListener('click', () => {
 
 btn.forEach(element => {
     element.addEventListener('click', () => {
-        console.log('d')
         
         overlay.classList.add('overlay-active')
         modal.classList.add('modal-active')

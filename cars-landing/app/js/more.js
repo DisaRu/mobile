@@ -16,5 +16,3 @@ moreBtn.addEventListener("click", () => {
 
 
 
-
-console.log(moreBtn);
