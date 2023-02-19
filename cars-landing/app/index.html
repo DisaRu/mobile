@@ -12,14 +12,48 @@
 </head>
 
 <body>
+    <!-- burger.scss -->
+    <div class="burgerOverlay hidden"></div>
+    <div class="burgerJs">
+        <div class="burgerBlock">
+            <div class="burgerButton">
+                <div class="burgerButtonArrow ">
+                    <div class="burgerButtonArrow-wrapp"></div>
+                </div>
+            </div>
+            <div class="burgerContent">
+                <!-- Hello Burger -->
+                <div class="order ">
+                    <h3 class="order__title  ">Получите одобрение на кредит в течение часа</h3>
+                    <p class="order__text  text">Заполните поля и отправьте заявку. Наш сотрудник свяжется
+                        с вами в течение
+                        часа
+                        и проинформирует о кредитных условиях.</p>
+                    <form action="#" class="order__form">
+                        <input class="order__form-number" type="tel" placeholder="+7 (999) 999-99-99"></input>
+                        <p class="order__form-text">Отправляя форму, вы соглашаетесь
+                            с <span class="text-orange"><a href="#">политикой обработки <br>
+                                    персональных данных.</a></span></p>
+                        <button onclick="return false" class="order__button btn btn-orange  ">узнать цену по акции
+                        </button>
+                    </form>
+                </div>
 
-    <div class="overlay ">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="overlay"></div>
         <div class="modal ">
             <div class="modal-close">X</div>
-            Hello Modal
+            <div class="modal__content">
+            <input type="text" placeholder="sssss">
+
+            </div>
         </div>
 
-    </div>
+    
 
 
     <!-- header.scss -->
@@ -787,7 +821,7 @@
                     50% </span>на
                 сервисные работы при первом визите!</p>
 
-            <div class="benefit container-width">
+            <div class="benefit  container-width">
                 <div class="benefit__item">
                     <img src="./images/benefit/360-768-1280-icon.svg" alt="" class="benefit__item-img">
                     <p class="benefit__item-text">Специальные цены</p>
@@ -905,6 +939,7 @@
     <script src="js/switcher.js"></script>
     <script src="js/more.js"></script>
     <script src="js/reviews.js"></script>
+    <script src="js/burger.js"></script>
 
 
 </body>
