@@ -3,6 +3,10 @@
 }
 .cars__inner{
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
 }
 .cars__title {
 

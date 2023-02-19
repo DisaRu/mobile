@@ -8,7 +8,7 @@ let hr = document.getElementById('hr');
 let mm = document.getElementById('mm');
 let ss = document.getElementById('ss');
 
-let endDate = '05/06/2023 12:9:00';
+let endDate = '02/23/2023 12:9:00';
 
 let x = setInterval(function () {
     let now = new Date(endDate).getTime();
@@ -28,9 +28,9 @@ let x = setInterval(function () {
     document.querySelector('.seconds').innerHTML = s + '<br> <span>Секунд</span>';
 
 
-    dd.style.strokeDashoffset = 128 - (128 * d) / 2;
-    hr.style.strokeDashoffset = 128 - (128 * h) / 60;
-    mm.style.strokeDashoffset = 128 - (128 * m) /50;
-    ss.style.strokeDashoffset = 150 - (150 * s) / 40;
+    dd.style.strokeDashoffset = 200 - (200 * d) / 365;
+    hr.style.strokeDashoffset = 200 - (200 * h) / 24;
+    mm.style.strokeDashoffset = 200 - (200 * m) /60;
+    ss.style.strokeDashoffset = 200 - (200 * s) / 60;
     // console.log(Math.floor(d));
 });

@@ -1,11 +1,14 @@
-.switcher {
-    // width: 80%;
+.switcher__item {
+    // min-width: 100%;
+    
 }
 
 .switcher__btns {
     display: flex;
     justify-content: center;
-    gap: 14px;
+    // justify-content: space-between;
+    gap: 20px;
+
 }
 
 .switcher__button {
@@ -14,9 +17,14 @@
     background-color: var(--clr);
     border-radius: 8px;
 
+    @media screen and (max-width: 768px) {
+        height: 50px;
+        width: 50px;
+    }
+
 }
 
-.switcher__img {
+.switcher__img{
     object-fit: cover;
     height: 100%;
     width: 100%;

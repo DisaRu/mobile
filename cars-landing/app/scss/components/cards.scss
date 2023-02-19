@@ -1,10 +1,15 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 10px;
+    scroll-behavior: smooth;
+    align-items: center;
+    justify-content: center;
 
+ 
 
     &__item {
+        flex: 1;
         padding: 20px;
         background-color: var(--white);
         max-width: 378px;
@@ -18,3 +23,4 @@
         object-fit: cover;
     }
 }
+

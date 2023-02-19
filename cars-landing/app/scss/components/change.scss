@@ -1,16 +1,25 @@
-.change__wrapper{
-    padding: 80px 0;
+.change__wrapper {
+    // padding: 80px 0;
 
 }
+
 .change {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        padding-bottom: 20px;
+    }
+}
+
+.change__inner {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 20px 0 40px;
-
-    &__title{
-        padding-bottom: 20px;
-    }
+    padding: 20px 0 10px;
 }
 
 .change__item {
@@ -33,9 +42,7 @@
         font-family: var(--bold);
         font-size: 70px;
 
-        & span {
-
-        }
+        & span {}
     }
 
     &-text {
@@ -49,3 +56,5 @@
         letter-spacing: 0.03em;
     }
 }
+
+.change__button {}

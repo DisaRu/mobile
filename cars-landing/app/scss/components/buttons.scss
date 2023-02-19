@@ -1,42 +1,57 @@
 .btn {
+    font-size: 14px;
+    display: block;
+    // border: 1px solid transparent;
     border-radius: 6px;
     padding: 14px 40px;
-    font-family: var(--bold);
+    font-family: var(--medium);
     text-transform: uppercase;
     white-space: nowrap;
-    &:hover{
+    // margin: 10px auto;
+    max-width: 300px;
+    // width: 100%;
+    z-index: 99;
+ 
+   
+
+    @media screen and (max-width: 468px) {
+        font-size: 0.7rem;
+        padding: 8px 10px ;
+    }
+
+    &:hover {
+        // border: 1px solid transparent;
         opacity: .9;
 
     }
 }
 
 .promo__btn {
-    padding: 14px 0px;
-    width: 100%;
+    // padding: 14px 60px;
+    // width: 100%;
+    margin: 0 auto;
     white-space: nowrap;
+    // border: 1px solid var(--black);
 
 }
 
-.cards__item-btn {
-    border: 1px solid var(--black);
-}
+
 
 .banner__btn {
     padding: 14px 42px;
     // z-index: 1000;
-    cursor: pointer;
-    border: 1px solid var(--white);
+    // border: 1px solid var(--white);
 
 }
 
 .btn-orange {
+
     background-color: var(--orange);
-    border: 1px solid var(--orange);
     color: var(--white);
-    // padding-top: -1px;
+
     &:hover {
-        opacity:.9;
-        border: 1px solid var(--black);
+        opacity: .9;
+        // border: 1px solid var(--transparent);
         background-color: var(--transparent);
         color: var(--black);
     }
@@ -44,16 +59,19 @@
 }
 
 .btn-transparent {
+
     background-color: transparent;
     border: 1px solid;
-    left: 50%;
+    // left: 50%;
     transition: all 0.3s;
+   
+
     &:hover {
-        opacity:.9;
+        opacity: .9;
         background-color: var(--orange);
-        border: none;
+        // border: 1px solid var(--transparent);;
         color: var(--white);
     }
 
-    
+
 }

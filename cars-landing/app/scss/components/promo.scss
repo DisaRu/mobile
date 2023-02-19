@@ -1,18 +1,28 @@
-.promo{
-    display: flex;
-    justify-content: space-between;
+.promo {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 15px;
 
-    &__left{
-        width: 25%;
-        width: 337px;
+    &__left {
+
+        align-items: center;
         padding: 36px 20px;
         border-radius: 12px;
         background-color: var(--white);
-  
+   
+
     }
-    &__right{
-        flex: 1;
-        z-index: 1;
+
+    &__right {
+        // min-width: 600px;
+        flex: 1 1 auto;
+        // z-index: 1;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .promo {
+        grid-template-columns: 12fr;
+        z-index: 1000;
+    }
+}

@@ -1,11 +1,13 @@
 .photo__wrapper{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 2рр0px;
 }
 .photo{
     display: flex;
     gap: 10px;
     overflow: hidden;
     overflow-x: scroll;
-
+    &__title{
+        margin-bottom: 20px;
+    }
 }

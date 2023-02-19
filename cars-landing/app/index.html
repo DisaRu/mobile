@@ -13,10 +13,12 @@
 
 <body>
 
-    <div class="overlay "></div>
-    <div class="modal ">
-        <div class="modal-close">X</div>
-        Hello Modal
+    <div class="overlay ">
+        <div class="modal ">
+            <div class="modal-close">X</div>
+            Hello Modal
+        </div>
+
     </div>
 
 
@@ -24,10 +26,10 @@
     <header class="header">
 
         <div class="header__top container">
-            <div class="header__logo">
-                <img src="./images/logo.svg" alt="Site logo" class="header__logo-img">
-                <span class="header__logo-text">Официальный дилер <br>
-                    exeed Максимум Обводный</span>
+            <div class="header__logo logo">
+                <img src="./images/logo.svg" alt="Site logo" class="header__logo-img logo-img">
+                <div class="header__logo-text logo-text">Официальный дилер <br>
+                    exeed Максимум Обводный</div>
             </div>
 
             <div class="header__links">
@@ -41,23 +43,23 @@
             <div class="navigation__wrapper container">
                 <!-- navigation.scss -->
                 <ul class="navigation ">
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> TXL</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> TXL</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> TXL 2.0</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> TXL 2.0</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> LX</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> LX</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> LX 1.6 AWD</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> LX 1.6 AWD</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> VX</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> VX</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> VX LE</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> VX LE</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Тест-драйв</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> Тест-драйв</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Trade-in</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> Trade-in</a></li>
                     <div class="line"></div>
-                    <li class="navigation__item"><a class="navigation__item-link" href="#"> Сервис</a></li>
+                    <li class="navigation__item"><a class="navigation__item-link" href="#colors"> Сервис</a></li>
                 </ul>
             </div>
         </div>
@@ -74,7 +76,7 @@
             <div class="promo ">
 
                 <div class="promo__left">
-                    <div class="promo__left-title title">Реализация склада в <span class="title-bold">EXEED Максимум
+                    <div class="promo__left-title title">Реализация склада в <span class="title-medium">EXEED Максимум
                             Обводный</span>
                     </div>
                     <!-- sales.scss -->
@@ -84,7 +86,7 @@
                         <div class="sales__item">
                             <img class="sales__item-icon" src="./images/sales/360-768-1280-icons.svg"></img>
                             <p class="sales__item-text text">Рассрочка <span class="text-orange"> под 0%*
-                                    годовых</span></p>
+                                </span>годовых</p>
                         </div>
                         <div class="sales__item">
                             <img class="sales__item-icon" src="./images/sales/360-768-1280-sdfghjk.svg"></img>
@@ -140,25 +142,19 @@
                                 </svg>
                                 <div class="seconds" id="seconds">00<span>seconds</span></div>
                             </div>
-
                         </div>
-
                     </div>
-
-
-
                     <!-- buttons.scss -->
                     <button class="promo__btn btn btn-orange">
                         получить предложение
                     </button>
 
-                </div>
 
+                </div>
                 <div class="promo__right">
                     <!-- banner.scss -->
                     <div class="banner">
-                        <img class="banner__img" src="./images/banner/360-768-1280-banner.png" alt="Cars banner">
-                        <div class="banner__text">Премиальный EXEED <br>
+                        <div class="banner__text">Премиальный EXEED
                             с выгодой
                             <span class="title-bold"> до 1 000 000
                                 ₽</span>
@@ -166,10 +162,6 @@
                         <button class=" btn banner__btn btn-transparent ">узнать цену по акции </button>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
         <!-- cars.scss -->
@@ -297,6 +289,11 @@
 
 
                     </li>
+
+
+                </ul>
+                <ul class="cards">
+
                     <li class="cards__item">
                         <div class="cards__img">
                             <img src="./images/carCards/360-768-1280-img.png" alt="" srcset="">
@@ -419,7 +416,7 @@
 
         </div>
         <!-- colors.scss -->
-        <div class="colors__wrapper container">
+        <div class="colors__wrapper container" id="colors">
 
 
             <h2 class="colors__title title">Новый Exeed <span class="title-bold"> в любимом цвете</span></h2>
@@ -432,26 +429,23 @@
                     <!-- switcher.scss -->
                     <div class="switcher">
                         <div class="switcher__item">
-                            <img src="./images/switcher/car1.png" alt="" id="car-1" class="switcher__img ">
-                            <img src="./images/switcher/car2.png" alt="" id="car-2" class="switcher__img hidden  ">
-                            <img src="./images/switcher/car3.png" alt="" id="car-3" class="switcher__img hidden ">
-                            <img src="./images/switcher/car4.png" alt="" id="car-4" class="switcher__img hidden ">
-                            <img src="./images/switcher/car4.png" alt="" id="car-5" class="switcher__img hidden ">
-                            <img src="./images/switcher/car5.png" alt="" id="car-6" class="switcher__img hidden ">
+                            <img src="./images/switcher/imgcarBlack.png" alt="" id="car-1" class="switcher__img ">
+                            <img src="./images/switcher/imgcarWhite.png" alt="" id="car-2"
+                                class="switcher__img hidden  ">
+                            <img src="./images/switcher/imgcarBlue.png" alt="" id="car-3" class="switcher__img hidden ">
+                            <img src="./images/switcher/imgcarRed.png" alt="" id="car-4" class="switcher__img hidden ">
                         </div>
                         <div class="switcher__btns">
                             <button class="switcher__button switcher__button-1" data-car="car-1" style="--clr:#272D2F;"
                                 type="button"></button>
                             <button class="switcher__button switcher__button-2" data-car="car-2" style="--clr:#DCE6ED;"
                                 type="button"></button>
-                            <button class="switcher__button switcher__button-3" data-car="car-3" style="--clr:#455058;"
+                            <button class="switcher__button switcher__button-3" data-car="car-3" style="--clr:#002475;"
                                 type="button"></button>
-                            <button class="switcher__button switcher__button-4" data-car="car-4" style="--clr:#B6B5BC;"
+
+                            <button class="switcher__button switcher__button-5" data-car="car-4" style="--clr:#59020E;"
                                 type="button"></button>
-                            <button class="switcher__button switcher__button-5" data-car="car-5" style="--clr:#4A2F4C;"
-                                type="button"></button>
-                            <button class="switcher__button switcher__button-6" data-car="car-6" style="--clr:#37457E;"
-                                type="button"></button>
+
                         </div>
 
                     </div>
@@ -524,7 +518,7 @@
         <!-- photo.scss -->
         <div class="photo__wrapper container">
             <h3 class="photo__title title">Фотографии</h3>
-            <div class="photo">
+            <div class="photo scroll">
                 <img src="./images/photo/360-768-1280-img.png" alt="" srcset="">
                 <img src="./images/photo/360-768-1280-img.png" alt="" srcset="">
                 <img src="./images/photo/360-768-1280-img.png" alt="" srcset="">
@@ -538,7 +532,7 @@
                 <img src="./images/action/360-768-1280-1.png" alt="" class="action__img">
 
                 <h3 class="action__title title "><span class="title-blue"> Испытайте Exeed </span>перед покупкой</h3>
-                <p class="action__text">Оставьте заявку на тест-драйв, чтобы самостоятельно <br>
+                <p class="action__text text">Оставьте заявку на тест-драйв, чтобы самостоятельно <br>
                     оценить все преимущества автомобиля</p>
 
                 <button class="action__btn btn btn-transparent">
@@ -549,7 +543,7 @@
                 <img src="./images/action/360-768-1280-1.png" alt="" class="action__img">
 
                 <h3 class="action__title title "><span class="title-blue"> Испытайте Exeed </span>перед покупкой</h3>
-                <p class="action__text">Оставьте заявку на тест-драйв, чтобы самостоятельно <br>
+                <p class="action__text text">Оставьте заявку на тест-драйв, чтобы самостоятельно <br>
                     оценить все преимущества автомобиля</p>
 
                 <button class="action__btn btn btn-transparent">
@@ -565,59 +559,64 @@
             <p class="change__text text ">Воспользуйтесь услугой trade-in и обменяйте свой автомобиль всего за один
                 день!</p>
             <div class="change">
-
-                <div class="change__item" style="--clr:var(--aqua)">
-                    <div class="change__item-number"><span class="text-opacity">0</span>1
+                <div class="change__inner">
+                    <div class="change__item" style="--clr:var(--aqua)">
+                        <div class="change__item-number"><span class="text-opacity">0</span>1
+                        </div>
+                        <div class="change__item-text">
+                            Выберите Exeed
+                            из ассортимента дилерского
+                            центра «‎Максимум»‎
+                        </div>
                     </div>
-                    <div class="change__item-text">
-                        Выберите Exeed
-                        из ассортимента дилерского
-                        центра «‎Максимум»‎
+                    <div class="change__item" style="--clr:var(--orange)">
+                        <div class="change__item-number"><span class="text-opacity">0</span>2
+                        </div>
+                        <div class="change__item-text">
+                            Выберите Exeed
+                            из ассортимента дилерского
+                            центра «‎Максимум»‎
+                        </div>
+                    </div>
+                    <div class="change__item" style="--clr:var(--bordo)">
+                        <div class="change__item-number"><span class="text-opacity">0</span>3
+                        </div>
+                        <div class="change__item-text">
+                            Выберите Exeed
+                            из ассортимента дилерского
+                            центра «‎Максимум»‎
+                        </div>
                     </div>
                 </div>
-                <div class="change__item" style="--clr:var(--orange)">
-                    <div class="change__item-number"><span class="text-opacity">0</span>2
-                    </div>
-                    <div class="change__item-text">
-                        Выберите Exeed
-                        из ассортимента дилерского
-                        центра «‎Максимум»‎
-                    </div>
-                </div>
-                <div class="change__item" style="--clr:var(--bordo)">
-                    <div class="change__item-number"><span class="text-opacity">0</span>3
-                    </div>
-                    <div class="change__item-text">
-                        Выберите Exeed
-                        из ассортимента дилерского
-                        центра «‎Максимум»‎
-                    </div>
-                </div>
+                <button class="change__button btn btn-transparent">оставить заявку</button>
             </div>
-            <button class="change__button btn btn-transparent">оставить заявку</button>
 
         </div>
         <!-- order.scss -->
         <div class="order__wrapper container">
-            <h3 class="order__title  ">Получите одобрение на кредит в течение часа</h3>
-            <p class="order__text  text">Заполните поля и отправьте заявку. Наш сотрудник свяжется с вами в течение часа
-                и проинформирует о кредитных условиях.</p>
-            <div class="order">
 
-                <form class="order__form">
+            <div class="order ">
+                <h3 class="order__title  ">Получите одобрение на кредит в течение часа</h3>
+                <p class="order__text  text">Заполните поля и отправьте заявку. Наш сотрудник свяжется с вами в течение
+                    часа
+                    и проинформирует о кредитных условиях.</p>
+                <form action="#" class="order__form">
                     <input class="order__form-number" type="tel" placeholder="+7 (999) 999-99-99"></input>
                     <p class="order__form-text">Отправляя форму, вы соглашаетесь
                         с <span class="text-orange"><a href="#">политикой обработки <br>
                                 персональных данных.</a></span></p>
-                    <button class="order__button btn btn-transparent">оставить заявку</button>
+                    <button onclick="return false" class="order__button btn btn-transparent  ">узнать цену по акции
+                    </button>
                 </form>
             </div>
         </div>
         <!-- advantages.scss -->
         <div class="advantages__wrapper container">
-            <h2 class="advantages__title title"><span class="title-bold">Преимущества</span> дилерского центра Exeed
+            <h2 class="advantages__title title "><span class="title-bold">Преимущества</span> дилерского
+                центра Exeed
                 Максимум</h2>
-            <p class="advantages__text">Отправьте заявку и получите <span class="text-orange">выгоду 50% </span> на
+            <p class="advantages__text ">Отправьте заявку и получите <span class="text-orange">выгоду 50%
+                </span> на
                 сервисные работы при первом визите!</p>
             <div class="advantages">
                 <div class="advantages__item">
@@ -639,12 +638,13 @@
 
                 <div class="advantages__item advantages__item-hidden">
                     <img src="./images/advantages/360-768-1280-icon2.svg" alt="" class="advantages__item-icon">
-                    <p class="advantages__item-text">Официальный дилер Exeed в России</p>
+                    <p class="advantages__item-text">Сотрудничество с
+                        15 банками-партнерами</p>
                 </div>
 
 
             </div>
-            <div class="advantages">
+            <div class="advantages ">
                 <div class="advantages__item">
                     <img src="./images/advantages/360-768-1280-icon3.svg" alt="" class="advantages__item-icon">
                     <p class="advantages__item-text">Подарки
@@ -664,15 +664,10 @@
 
             </div>
         </div>
-
-
-
-
-
         <!-- reviews.scss -->
-        <div class="reviews__wrapper container container-width">
-            <h3 class="reviews__title title">Отзывы покупателей</h3>
-            <div class="reviews">
+        <div class="reviews__wrapper container">
+            <h3 class="reviews__title title container-width">Отзывы покупателей</h3>
+            <div class="reviews container-width scroll">
                 <div class="reviews__item">
                     <span class="reviews__item-name">Анна Ш.</span>
                     <ul class="reviews__stars">
@@ -783,14 +778,119 @@
                 </div>
             </div>
         </div>
+        <!-- benefit.scss -->
+        <div class="benefit__wrapper container">
+            <h2 class="benefit__title title container-width">Выгода <span class="title-bold"> до 50% </span> на услуги
+                сервиса! До
+                20.02.23</h2>
+            <p class="benefit__text text container-width"> Отправьте заявку и получите <span class="text-orange">выгоду
+                    50% </span>на
+                сервисные работы при первом визите!</p>
+
+            <div class="benefit container-width">
+                <div class="benefit__item">
+                    <img src="./images/benefit/360-768-1280-icon.svg" alt="" class="benefit__item-img">
+                    <p class="benefit__item-text">Специальные цены</p>
+                </div>
+                <div class="benefit__item">
+                    <img src="./images/benefit/360-768-1280-icon2.svg" alt="" class="benefit__item-img">
+                    <p class="benefit__item-text">Специальные цены</p>
+                </div>
+                <div class="benefit__item">
+                    <img src="./images/benefit/360-768-1280-icon3.svg" alt="" class="benefit__item-img">
+                    <p class="benefit__item-text">Специальные цены</p>
+                </div>
+                <div class="benefit__item">
+                    <img src="./images/benefit/360-768-1280-icon4.svg" alt="" class="benefit__item-img">
+                    <p class="benefit__item-text">Специальные цены</p>
+                </div>
+            </div>
+            <div class="container-width">
+
+                <button class="benefit__btn btn btn-orange">оставить заявку</button>
+            </div>
+        </div>
+        <!-- info.scss  -->
+        <div class="info__wrapper container">
+            <div class="info container-width">
+                <h2 class="info__title">EXEED Максимум</h2>
+                <p class="info__text text">Официальный дилер Exeed в Санкт-Петербурге</p>
+                <div class="info__list">
+                    <div class="info__item">
+                        <img src="./images/info/360-768-1280-Icon.svg" alt="" class="info__item-img">
+                        <a href="tel:+78923492020" class="info__item-tel">+78923492020</a>
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/info/360-768-1280-Icon1.svg" alt="" class="info__item-img">
+                        <span class="info__item-time">Пн-вс: 09:00 – 21:00</span>
+                    </div>
+                    <div class="info__item">
+                        <img src="./images/info/360-768-1280-Iconmap.svg" alt="" class="info__item-img">
+                        <span class="info__item-adress">Санкт-Петербург, ул. Рыбинская, 8к3</span>
+                    </div>
+                </div>
+
+                <button class="info__button btn btn-transparent">заказать звонок</button>
+            </div>
+        </div>
+
+        <div class="map__wrapper container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
 
 
+    <!-- footer.scss -->
+    <section class="footer__wrapper container">
+        <div class="footer">
+            <div class="footer__logo logo">
+                <img src="./images/logo.svg" alt="Site logo" class="footer__logo-img logo-img">
+                <span class="footer__logo-text logo-text">Официальный дилер <br>
+                    exeed Максимум Обводный</span>
+            </div>
 
-    <section class="footer">
 
+            <div class="footer__box">
+                <ul class="footer__socials">
+                    <li class="footer__socials__item">
+                        <a href="https://www.facebook.com/" class="footer__socials__link">
+                            <img src="./images/footerSoc/360-768-1280-vkvk.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__socials__item">
+                        <a href="https://www.facebook.com/" class="footer__socials__link">
+                            <img src="./images/footerSoc/360-768-1280-vkvk.png" alt="">
+                        </a>
+                    </li>
+                    <li class="footer__socials__item">
+                        <a href="https://www.facebook.com/" class="footer__socials__link">
+                            <img src="./images/footerSoc/360-768-1280-vkvk.png" alt="">
+                        </a>
+                    </li>
+                </ul>
 
+                <div class="footer__inner">
+                    <div class="footer__telText text-opacity">Телефон:</div>
+                    <a class="footer__telNumber">+7 (812) 602-46-86</a>
+                </div>
+                <div class="footer__inner">
+                    <div class="footer__adrText text-opacity">Адрес салона:
+                    </div>
+                    <a class="footer__adrTextLiner"> Санкт-Петербург, ул. Рыбинская, 8к3</a>
+                </div>
+            </div>
 
+            <div class="footer__cookie">
+                <a class="footer__cookie-link link-decor">Политика конфиденциальности</a>
+                <a class="footer__cookie-link link-decor">Использование cookies</a>
+            </div>
+            <div class="footer__cookie">
+                <span>© 2022 Автосалон Максимум. Официальный дилер Exeed в Санкт-Петербурге.</span>
+            </div>
+        </div>
 
     </section>
 

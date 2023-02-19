@@ -1,0 +1,39 @@
+.info__wrapper {
+    margin-top: 40px;
+    color: var(--white);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), #181B1D;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.info__title {
+    padding: 60px 0 34px;
+    font-family: var(--regular);
+    font-weight: 400;
+
+}
+.info__list{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.info__item{
+    display: flex;
+    gap: 10px;
+    
+    align-items: center;
+
+    & span{
+        
+    }
+}
+.info__button{
+    color: var(--white);
+    margin: 60px 0;
+
+}
+
+.map__wrapper.container{
+padding: 0;
+margin-bottom: 90px;
+}

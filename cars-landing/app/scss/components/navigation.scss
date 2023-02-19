@@ -1,26 +1,32 @@
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     // gap: 39px;
     flex-wrap: wrap;
-    
-    &__item{
+
+    &__item {
         margin: 14px 0;
         // border-right: 1px solid ;
         white-space: nowrap;
-        
-        &:last-child{
+
+        &:last-child {
             padding-right: 0px;
         }
-        &:first-child{
-            
+
+        &:first-child {
+
             padding-left: 0px;
         }
     }
-}
-.line{
-	margin-top: 14px;
-	height: 20px;
-	width: 1px;
-	background-color: var(--white);
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    .line {
+        margin-top: 14px;
+        height: 20px;
+        width: 1px;
+        background-color: var(--white);
+    }
 }
