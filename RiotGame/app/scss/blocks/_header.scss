@@ -1,0 +1,30 @@
+.header{
+    // height: 132px;
+    background-color:#1F2326;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 30px;
+    
+    
+    &__logo{
+        display: flex;
+
+        &-el{
+            padding: 0 40px;
+            &--border{
+                border-right: 2px solid;
+            }
+        }
+    }
+
+    &__login{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+}

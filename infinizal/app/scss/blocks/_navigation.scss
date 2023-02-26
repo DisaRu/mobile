@@ -1,0 +1,20 @@
+.navigation{
+
+    &__logo{
+        margin-right: 50px;
+    }
+    &__list{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+
+        &-item{
+            padding: 20px 0;
+
+            &:hover{
+                color:#FAC422 ;
+            }
+        }
+        
+    }
+}

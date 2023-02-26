@@ -1,0 +1,64 @@
+.options__wrapper{
+    background: #2A313C;
+}
+.options {
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+
+        &-item {
+            flex-grow: 1;
+            position: relative;
+
+            &--title {
+                display: inline-block;
+                position: absolute;
+                left: calc(50% - 100px);
+                top: 60%;
+                font-weight: 400;
+                font-size: 2em;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 18%;
+                    bottom: 160%;
+                    height: 128px;
+                    width: 128px;
+                }
+
+            }
+
+
+
+
+            &--img {
+                width: 100%;
+                // display: none;
+            }
+        }
+    }
+
+
+
+}
+
+.icon1::before {
+    background-image: url(../../images/options-icon1.svg);
+
+}
+
+.icon2::before {
+    background-image: url(../../images/options-icon2.svg);
+
+}
+
+.icon3::before {
+    background-image: url(../../images/options-icon3.svg);
+
+}

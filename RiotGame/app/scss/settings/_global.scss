@@ -1,0 +1,44 @@
+html,
+body {
+	background-color: rgb(230, 64, 64);
+	font-weight: Bold;
+	max-width: 100%;
+	font-family: 'Druk-Wide-Bold', sans-serif;
+	color: rgb(255, 255, 255);
+	font-size: 1.1rem;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.page_wrapper {
+
+
+}
+
+.container {
+
+	max-width: 3075px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+.header {
+	width: 100%;
+
+	flex: 0 1 auto;
+
+}
+
+.main {
+
+	flex: 1;
+	height: 100vh;
+
+}
+
+.footer {
+	flex: 1;
+}

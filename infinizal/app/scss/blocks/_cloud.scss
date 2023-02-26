@@ -1,0 +1,41 @@
+.cloud__wrapper {
+    background-color: #141820;
+    padding: 50px 0;
+
+}
+
+.cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    &__content {
+        flex:1 ;
+        &-title {
+            margin: 30px 0;
+            font-size: 64px;
+            line-height: 74px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: rgba(223, 223, 223, 0.8);
+        }
+
+        &-button{
+            margin: 30px 0;
+            // width: 100%;
+        }
+
+
+
+    }
+
+
+
+}

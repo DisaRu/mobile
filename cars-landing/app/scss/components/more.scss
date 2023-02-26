@@ -1,4 +1,6 @@
-.more {}
+.more {
+    
+}
 
 .more__title {
     display: flex;
@@ -16,6 +18,9 @@
     border: 1px solid;
     position: relative;
     cursor: pointer;
+    background-color:var(--orange);
+
+
 }
 
 .more__btn::after,
@@ -67,5 +72,6 @@
     height: auto;
     opacity: 1;
     margin-bottom: 0;
+
 
 }

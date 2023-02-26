@@ -1,0 +1,19 @@
+.vertical__navigation {
+
+    &-title {
+        margin-bottom: 10px;
+    }
+
+    &-box {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20                                                             px;
+        /* identical to box height, or 250% */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-transform: capitalize;
+
+        color: #999999;
+    }
+}

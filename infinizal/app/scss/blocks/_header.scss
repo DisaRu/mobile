@@ -1,0 +1,145 @@
+.header__wrapper {
+    background-image: url('../../images/bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+
+
+
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    &__cart {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-img {
+            height: 40px;
+        }
+
+        &-btn {
+            height: 50px;
+            margin: 0 20px;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+            color: white;
+            padding: 10px 45px;
+            white-space: nowrap;
+
+        }
+    }
+
+}
+
+.header__content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.header__content {
+    flex: 1;
+    color: rgb(255, 255, 255);
+    margin: 150px 30px;
+    position: relative;
+
+
+
+
+    &-title {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 66px;
+        text-transform: capitalize;
+
+        & span {
+            position: relative;
+
+            &::after {
+
+                position: absolute;
+                content: '';
+                height: 20px;
+                width: 400px;
+                top: 70px;
+                left: 0px;
+                background-image: url('../../images/decore-yellow.svg');
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+
+    }
+
+
+
+    &-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 30px 0;
+        color: #ffffff !important;
+
+    }
+
+
+
+    &-socials {
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -170px;
+        top: 50%;
+        display: flex;
+        gap: 50px;
+        
+        & a{
+            
+            color: #80858F;
+            font-size: 11px;
+        }
+
+        
+    }
+}
+
+
+
+.header__content-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button {
+    // flex: 1;
+    padding: 15px 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+
+.button-blue {
+    background-color: #57B8FF;
+}

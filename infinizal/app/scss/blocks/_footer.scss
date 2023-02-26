@@ -1,0 +1,34 @@
+.footer {
+    padding: 40px 20px;
+    background-color: rgb(51, 51, 51);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 50px;
+    // align-items: center
+
+
+    &__socials {
+        align-self: center;
+
+        &-title {
+            margin-bottom: 20px;
+        }
+
+        &-box {
+
+            display: flex;
+            gap: 5px;
+
+            &--item {
+                height: 15px;
+                width: 24px;
+                transition: all ease-in-out .3s;
+
+                &:hover {
+                    transform: rotate(20deg);
+                }
+            }
+
+        }
+    }
+}
