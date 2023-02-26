@@ -8,7 +8,7 @@ let hr = document.getElementById('hr');
 let mm = document.getElementById('mm');
 let ss = document.getElementById('ss');
 
-let endDate = '02/23/2023 12:9:00';
+let endDate = '06/23/2023 12:9:00';
 
 let x = setInterval(function () {
     let now = new Date(endDate).getTime();
