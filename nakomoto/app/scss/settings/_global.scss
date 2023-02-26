@@ -1,0 +1,45 @@
+html,
+body {
+	max-width: 100%;
+	font-family: 'Nunito', sans-serif;
+	color: rgb(0, 0, 0);
+	// overflow-x: hidden;
+}
+ 
+.page_wrapper {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.container {
+
+	max-width: 1460px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+.container__more	{
+	max-width: 1460px;
+	margin: 0 auto;
+
+}
+.header {
+	min-width: 100%;
+
+	flex: 0 1 auto;
+
+}
+
+.main {
+
+	// flex: 0 1 auto;
+	// height: 100vh;
+
+}
+
+.footer {
+	flex: 0 0 auto;
+}

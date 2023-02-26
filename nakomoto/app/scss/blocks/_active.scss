@@ -1,0 +1,76 @@
+.active {}
+
+.active__header {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.active__title{
+    align-items: flex-start;
+}
+.active__content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    
+    // justify-content: space-between;
+
+
+}
+
+.active__item-container {
+    padding: 5px 20px;
+
+}
+
+.active__item {
+    // margin: 0 auto;
+    max-width: 360px;
+    padding: 5px;
+    filter: drop-shadow(0px 24px 32px rgba(50, 50, 71, 0.05));
+
+    &-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 0;
+    }
+
+    &-subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &-lastpay {
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+
+        color: #999999;
+    }
+
+    &-line {
+        width: 310px;
+        height: 5px;
+        left: 0px;
+        top: 34px;
+        margin-bottom: 10px;
+        background: linear-gradient(0deg, #03BAFE, #03BAFE), linear-gradient(0deg, #F7EFEF, #F7EFEF), #F7EFEF;
+        border-radius: 10px;
+
+    }
+    &-collect{
+        & span{
+            color: #999999;
+        }
+    }
+}

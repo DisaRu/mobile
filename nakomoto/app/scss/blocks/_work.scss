@@ -1,0 +1,164 @@
+.work__blocks {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    gap: 10px;
+  
+
+}
+
+.work__blocks-circle {
+    // padding-left: 100px;
+    // width: 40%;
+    // position: relative;
+}
+.work__right-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgba(3, 186, 254, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    
+
+}
+.work__blocks-right {
+    // grid-column: 2/2;
+    // display: flex;
+    // flex-direction: column;
+    // position: absolute;
+    // width: 48%;
+    // height: 500px;
+    // background-color: rgb(46, 20, 20);
+    // margin-top: 80px;
+    min-width: 350px;
+
+
+}
+
+
+
+.work__right-top--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.work__right-top--price {
+    font-weight: 700;
+    font-size: 24px;
+    // line-height: 72px;
+    align-items: center;
+    letter-spacing: 0.1px;
+
+    color: #03BAFE;
+}
+
+.work__right-top--text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+
+    color: #999999;
+}
+
+.work__right-body {
+    margin-top: 10px;
+    background: #EBFAFF;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+
+.work__right-body--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+
+}
+
+.work__right-body--list {
+
+    // display: flex;
+    // flex-direction: column;
+    // gap: 15px;
+    & li {
+        padding: 15px 30px;
+        position: relative;
+        align-items: center;
+
+
+        &::before {
+            position: absolute;
+            font-size: 30px;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: 0.2px;
+            left: 0;
+            top: 0px;
+
+            color: #03BAFE;
+        }
+
+    }
+
+
+}
+
+.work__right-body--item-1::before {
+    content: '1';
+
+}
+
+.work__right-body--item-2::before {
+    content: '2';
+
+}
+
+.work__right-body--item-3::before {
+    content: '3';
+
+}
+
+.work__right-body--item-4::before {
+    content: '4';
+
+}
+
+.body--btn_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    
+}
+
+.work__right-body--btn {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #000000;
+    border-radius: 5px;
+    
+}
+
+.body--btn1 {
+    flex-grow: 1;
+    background: #FFA200;
+}
+
+.body--btn2 {
+    flex-grow: 1;
+    background: #03BAFE;
+
+}

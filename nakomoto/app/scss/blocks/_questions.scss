@@ -1,0 +1,12 @@
+.questions__wrapper{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.questions__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 40px 0;
+}

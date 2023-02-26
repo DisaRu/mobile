@@ -1,0 +1,137 @@
+.dreams__wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #EBFAFF;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+
+}
+
+.dreams {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+
+}
+
+.dreams__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.dreams__form {
+    // height: 680px;
+    min-width: 100%;
+    background-color: rgb(133, 22, 22);
+    border-radius: 19px;
+    z-index: 2;
+    background-color: #fff;
+    filter: drop-shadow(0px 24px 32px rgba(50, 50, 71, 0.05));
+    // padding: 20px;
+
+
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #F9F9F9;
+
+
+}
+
+.form__control label {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    // width: 100%;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.dreams__form-img {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+}
+
+.form__control-inp {}
+
+.form__control-text {
+    margin-top: 160px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+
+}
+
+.form__control-text span {
+    color: #03BAFE;
+    padding-top: 2px;
+    padding-right: 20px;
+    border-bottom: 1px dashed;
+
+
+}
+
+
+
+input[type='file'] {
+    color: transparent;
+    display: none;
+}
+.form__order{
+    display: flex;
+    flex-direction: column;
+}
+.form__control-name,
+.form__control-desc,
+.form__control-target {
+    font-size: 20px;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #F9F9F9;
+    border: 1px solid #E9E9E9;
+    display: inline-block;
+    outline: none;
+}
+
+.form__control-desc {
+    padding-bottom: 120px;
+    align-items: center;
+    text-align: start;
+
+}
+
+.form__control-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    width: 100%;
+
+}
+
+.form__order-btn {
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFA200;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}

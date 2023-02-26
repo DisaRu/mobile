@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+
+    background-image: url('../images/header_bg.png');
+    background-position: top center;
+    background-size: cover;
+
+}
+
+.header__top {
+    // min-width: 100%;
+    display: flex !important;
+    // flex-direction: row;
+    gap: 10px;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__logo {
+    // margin: 0 auto;
+}
+
+.header__logo img {
+    display: block;
+    // flex-grow: 1;
+    height: 60px;
+}
+
+.header__menu {
+    // width: 100%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.header__menu-list {
+
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: center;
+    gap: 10px;
+
+}
+
+.header__menu-list a {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #f7f1f1;
+
+
+}
+
+.header__menu-list a:hover {}
+
+
+.select__wrapper {
+    display: flex;
+
+
+}
+
+.header__select {
+    appearance: none;
+    background-color: transparent;
+    color: #f7f1f1;
+    width: 100%;
+    outline: none;
+}
+
+.header__select option {
+    appearance: none;
+    background-color: rgba(255, 0, 0, 0);
+    color: #0f0c0c;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.select__wrapper {
+    height: 50px;
+    // display: block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 0 20px 0 10px;
+    position: relative;
+
+    z-index: 999;
+
+    &::before {
+        position: absolute;
+        content: '';
+        height: 6px;
+        width: 12px;
+        background-image: url('../../images/down__arr-W.svg');
+        background-position: center center;
+        background-size: cover;
+        right: 20px;
+        top: 20px;
+        pointer-events: none;
+        // color: #f7f1f1;
+    }
+
+}
+
+
+
+
+
+.header__content {
+    padding:0 3px  75px 3px;
+    color: #FFFFFF;
+
+    &-title {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        /* identical to box height, or 138% */
+
+        letter-spacing: 0.2px;
+
+    }
+
+    &-subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 40px;
+    }
+
+}
+
+.button__box {
+
+    display: flex;
+    gap: 15px;
+
+}

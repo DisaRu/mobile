@@ -1,0 +1,32 @@
+.capabilities {
+    margin-top: 100px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    &__subtitle {
+        margin: 27px 0 50px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+.capabilities__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.item__box{
+    padding:35px 25px;
+    background-color: #EBFAFF;
+    border-radius: 15px;
+    // min-width: 350px;
+
+    &-title{
+        margin: 40px 0px 20px;
+    }
+}

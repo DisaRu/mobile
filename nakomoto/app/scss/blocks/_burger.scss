@@ -1,0 +1,133 @@
+.burger__menu {
+    display: none;
+    position: fixed;
+    left: 200px;
+    z-index: 50;
+    transition: all 0.5s ease;
+
+
+}
+
+.burger__menu-button {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    left: 0;
+    z-index: 40;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    // background-color: rgb(99, 83, 83);
+}
+
+.burger__menu-button:hover .burger__menu-lines {
+    // filter: brightness(0.7);
+}
+
+.burger__menu-lines,
+.burger__menu-lines::after,
+.burger__menu-lines::before {
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    z-index: 999;
+
+}
+
+.burger__menu-lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.burger__menu-lines::before {
+    content: '';
+    top: -8px;
+}
+
+.burger__menu-lines::after {
+    content: '';
+    top: 8px;
+}
+
+.burger__menu-active .burger__menu-lines {
+    background-color: transparent;
+}
+
+.burger__menu-active .burger__menu-lines::after {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger__menu-active .burger__menu-lines::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+.burger__nav {
+    margin-top: 100px;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    // height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow-y: auto;
+    right: -100%;
+    align-items: center;
+    text-align: center;
+   
+    transition: all 0.5s ease;
+}
+
+.burger__menu-active .burger__nav {
+    right: 0;
+
+}
+
+.burger__nav-link {
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 30px;
+    color: black;
+
+}
+
+.burger__nav-link:hover {
+    border: 1px solid;
+}
+
+.burger__menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+
+}
+
+.burger__menu-active .burger__menu-overlay {
+    display: block;
+    background-color: rgba(153, 153, 153, 0.534);
+}
+
+.burger__button {
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 16px;
+    background-color: red;
+    padding: 10px 50px;
+    margin: 15px 20px;
+
+}

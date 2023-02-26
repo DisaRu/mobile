@@ -1,0 +1,26 @@
+
+
+.button {
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #f7f1f1;
+    border: 1px solid;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    // width: 100%;
+}
+
+
+.button__color-blue{
+    background-color: #03BAFE;
+    border-color: #03BAFE;
+}
+.button__color-border{
+    // width: 100%;
+    color:#03BAFE ;
+    padding: 20px 30px;
+    line-height: 9px;
+
+}
