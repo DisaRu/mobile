@@ -10,6 +10,7 @@ let ss = document.getElementById('ss');
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 let endDate = '06/23/2023 12:9:00';
 =======
 let endDate = '02/23/2024 12:9:00';
@@ -17,6 +18,9 @@ let endDate = '02/23/2024 12:9:00';
 =======
 let endDate = '08/23/2024 12:9:00';
 >>>>>>> 23c0aa7 (e)
+=======
+let endDate = '010/23/2024 12:9:00';
+>>>>>>> 03b3adb (tumer update)
 
 let x = setInterval(function () {
     let now = new Date(endDate).getTime();
