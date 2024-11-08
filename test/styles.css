@@ -8,6 +8,7 @@ body {
     font-family: Arial, sans-serif;
     max-width: 100%;
     padding: 15px;
+    font-size: x-small;
 }
 
 /* Стили слайдера */
@@ -91,12 +92,13 @@ body {
 }
 
 .add-ingredient {
-    margin-top: 10px;
-    padding: 10px;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+  margin-top: 10px;
+  padding: 5px;
+  background: #4CAF5000;
+  color: #00ff4c;
+  border: none;
+  cursor: pointer;
+  align-items: center;
 }
 
 /* Стили для вкладок */
