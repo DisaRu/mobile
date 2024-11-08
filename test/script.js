@@ -364,16 +364,9 @@ function loadFromLocalStorage() {
         updateStepsList();
         document.querySelector('.recipe-text').value = recipe;
         updateVideoGallery();
+        saveToLocalStorage()
     }
 }
 
 
-function loadFromLocalStorage() {
-    const data = JSON.parse(localStorage.getItem('recipeData'));
-    if (data) {
-        steps = data.steps || [];
-        updateStepsList(); // Добавьте явный вызов обновления списка
-    }
-}S
-initCookingTab()  
-console.log('Loaded steps:', steps);
+
