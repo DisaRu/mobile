@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mobile/build/static/css/main.6ad98855.css",
+    "main.js": "/mobile/build/static/js/main.858dc70d.js",
+    "index.html": "/mobile/build/index.html",
+    "main.6ad98855.css.map": "/mobile/build/static/css/main.6ad98855.css.map",
+    "main.858dc70d.js.map": "/mobile/build/static/js/main.858dc70d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ad98855.css",
+    "static/js/main.858dc70d.js"
+  ]
+}
