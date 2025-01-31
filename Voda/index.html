@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокат яхт и катеров - Voda VIP</title>
+    <meta name="description" content="Премиум прокат яхт и катеров для VIP-клиентов. Насладитесь роскошью и комфортом с компанией Voda.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Voda VIP</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#fleet">Флот</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <main>
+        <section id="home" class="full-screen" style="background-image: url('home-bg.jpg');">
+            <h1>Добро пожаловать в Voda VIP</h1>
+            <p>Премиум прокат яхт и катеров для незабываемых путешествий. Откройте для себя роскошь и комфорт на воде.</p>
+        </section>
+
+        <section id="services" class="full-screen" style="background-image: url('services-bg.jpg');">
+            <h2>Наши VIP-услуги</h2>
+            <div class="card-container">
+                <!-- Начало карточек услуг -->
+                <div class="card" onclick="window.location.href='service1.html'">
+                    <img src="yacht1.jpg" alt="Яхта 1">
+                    <h3>Аренда яхты для VIP-вечеринки</h3>
+                    <p>Насладитесь роскошной вечеринкой на борту нашей яхты.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>Отзывы: 4.5/5</p>
+                </div>
+                <div class="card" onclick="window.location.href='service2.html'">
+                    <img src="yacht2.jpg" alt="Яхта 2">
+                    <h3>Рыбалка на катере класса люкс</h3>
+                    <p>Идеальный день для рыбалки с комфортом и стилем.</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Отзывы: 5/5</p>
+                </div>
+                <!-- Добавляйте новые карточки здесь -->
+            </div>
+        </section>
+
+        <section id="about" class="full-screen" style="background-image: url('about-bg.jpg');">
+            <h2>О нас</h2>
+            <p>Компания Voda VIP - лидер в области премиум проката яхт и катеров. Мы гордимся нашим профессионализмом и индивидуальным подходом к каждому клиенту. Наши опытные капитаны и экипаж обеспечат вам безопасное и комфортное путешествие.</p>
+        </section>
+
+        <section id="fleet" class="full-screen" style="background-image: url('fleet-bg.jpg');">
+            <h2>Наш флот</h2>
+            <p>Наш флот включает в себя современные и безопасные яхты и катера класса люкс, которые удовлетворят любые ваши потребности. Мы регулярно обновляем и обслуживаем наши суда, чтобы обеспечить максимальный комфорт и безопасность.</p>
+        </section>
+
+        <section id="prices" class="full-screen" style="background-image: url('prices-bg.jpg');">
+            <h2>Цены</h2>
+            <p>Мы предлагаем конкурентоспособные цены на все наши VIP-услуги. Свяжитесь с нами для получения подробной информации и индивидуального предложения.</p>
+        </section>
+
+        <section id="reviews" class="full-screen" style="background-image: url('reviews-bg.jpg');">
+            <h2>Отзывы</h2>
+            <p>Наши VIP-клиенты ценят нас за высокий уровень сервиса и незабываемые впечатления. Присоединяйтесь к числу довольных клиентов!</p>
+        </section>
+
+        <section id="contact" class="full-screen" style="background-image: url('contact-bg.jpg');">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами по телефону или электронной почте для бронирования и получения дополнительной информации.</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: vip@voda.com</p>
+        </section>
+
+        <section id="booking" class="full-screen" style="background-image: url('booking-bg.jpg');">
+            <h2>Бронирование</h2>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Забронировать</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Voda VIP. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
