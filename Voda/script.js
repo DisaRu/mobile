@@ -65,8 +65,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Load header and footer, and initialize page after header is loaded
-    loadHTML('/header.html', 'header-placeholder', initializePage);
-    loadHTML('/footer.html', 'footer-placeholder');
+function loadHTML(url, elementId, callback) {
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+            if (callback) callback();
+        })
+        .catch(error => console.error('Error loading HTML:', error));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadHTML('/header.html', 'header-placeholder', () => {
+        console.log('Header loaded successfully');
+    });
+    loadHTML('/footer.html', 'footer-placeholder', () => {
+        console.log('Footer loaded successfully');
+    });
+});
 
     // Initialize card sliders
     function initializeSliders() {
