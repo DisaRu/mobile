@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Load header and footer, and initialize page after header is loaded
-    loadHTML('../header.html', 'header-placeholder', initializePage);
-    loadHTML('../footer.html', 'footer-placeholder');
+    loadHTML('/header.html', 'header-placeholder', initializePage);
+    loadHTML('/footer.html', 'footer-placeholder');
 
     // Initialize card sliders
     function initializeSliders() {
